@@ -78,6 +78,26 @@ h2 { font-family: helvetica; }
     margin: 0 !important;
     padding-top: 5px !important;
 }
+ul.nav {
+    font-size: 1em;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    list-style-type: none;
+    background: #4F1814;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+ul.nav li {
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: arial;
+}
+.nav a {
+    color: #fcc;
+    text-decoration: none;
+}
 #aroundtheweb {
     clear: both;
 }
