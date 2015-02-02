@@ -1,7 +1,13 @@
 
 body {
     font-family: helvetica, san-serif;
+    margin-left: 12px;
 }
 h1 {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
+h2 {
+}
+ul {
+}
+
