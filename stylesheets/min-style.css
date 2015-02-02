@@ -1,7 +1,7 @@
 
 body {
     font-family: helvetica, san-serif;
-    margin-left: 12px;
+    margin: 0px;
 }
 h1 {
     letter-spacing: 3px;
@@ -9,5 +9,9 @@ h1 {
 h2 {
 }
 ul {
+}
+.leftCol {
+    background: #eee;
+    padding:10px;
 }
 
