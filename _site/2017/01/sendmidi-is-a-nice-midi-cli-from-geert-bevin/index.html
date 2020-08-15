@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SendMIDI is a Nice MIDI CLI from Geert Bevin</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>SendMIDI is a Nice MIDI CLI from Geert Bevin</h1>
+<p><b>18 Jan 2017</b></p>
+
+<p><a href="https://twitter.com/gbevin">Geert Bevin</a>, a prolific developer of music software (e.g., he wrote the firmware for the <a href="http://www.rogerlinndesign.com/linnstrument.html">Linnstrument</a> and has been influential in developing the <a href="https://docs.google.com/document/d/1vpjxoPHw82X3xyNvE6_hsDeL86vloNQZC83NHD8edow/edit">MPE</a> extension for expressive MIDI controllers) has recently opensourced a utility called <a href="https://github.com/gbevin/SendMIDI">SendMIDI</a>, which lets you send MIDI messages from a simple command line interface.</p>
+<p>For example, using SendMIDI, I can send the following commands (using <a href="https://www.iterm2.com/">Iterm2</a> on my Mac) to experiment with changing the pad LED colors on my <a href="http://lividinstruments.com/products/minim/">Minim Bluetooth controller</a> from Livid.</p>
+<p>&nbsp;</p>
+<pre>11:53 $ sendmidi list
+Livid Minim Bluetooth
+✔ ~
+11:53 $ sendmidi dev "Livid Minim Bluetooth" ch 15 cc 17 5
+✔ ~
+11:54 $</pre>
+<p>&nbsp;</p>
+<p>The first command above (i.e, <em>list)</em> displays connected devices.  The second command sends a cc message on channel 15 to the "Livid Minim Bluetooth" device.  But that's not all!  You can also save command sequences in a file and instruct sendmidi to execute the commands from the file.  Here's how you'd do that.</p>
+<p>&nbsp;</p>
+<pre>$ cat sendmidi.input | sendmidi --</pre>
+<p>&nbsp;</p>
+<p>The command above prints the contents of the <em>sendmidi.input</em> file and <a href="https://en.wikipedia.org/wiki/Pipeline_(Unix)">pipes</a> the output to sendmidi, which is instructed (via the "--" parameter) to read from standard input and execute the commands contained in the <em>sendmidi.input</em> file.  And here's what the <em>sendmidi.input</em> file looks like.</p>
+<p>&nbsp;</p>
+<pre>$ cat sendmidi.input
+dev "Livid Minim Bluetooth"
+ch 15
+cc 14 3
+cc 15 3
+cc 16 3
+cc 17 3</pre>
+<p>&nbsp;</p>
+<p>When executed by sendmidi, those commands make the top row of pads on my Minim blink green.</p>
+<p>An alternate way (<a href="https://en.wikipedia.org/wiki/There's_more_than_one_way_to_do_it">TMTOWTDI</a>) to accomplish the same thing is to run:</p>
+<p>&nbsp;</p>
+<pre>$ sendmidi file sendmidi.input</pre>
+<p>&nbsp;</p>
+<p>The net effect is the same either way although in the latter case you can continue to chain commands after the file is processed, making this approach more flexible overall.  For example:</p>
+<p>&nbsp;</p>
+<pre>$ sendmidi file sendmidi.input cc 10 3 cc 11 3 cc 12 3 cc 13 3</pre>
+<p>&nbsp;</p>
+<p>Executing the commands in the file, followed by the additional CC messages, makes all eight of the Minim's pads blink green.</p>
+<p>So if you've got some MIDI gear and want to experiment with how it responds to different MIDI messages give SendMIDI a try.  Get the latest release at <a href="https://github.com/gbevin/SendMIDI/releases">https://github.com/gbevin/SendMIDI/releases</a> (Geert's been pumping out a steady stream of updates over the past several days).  Or read more over at <a href="http://cdm.link/2017/01/send-midi-messages-faster-ever-right-command-line/">CDM</a> or <a href="http://www.synthtopia.com/content/2017/01/13/sendmidi-brings-midi-to-command-line/">Synthtopia</a>.  And thanks, Geert!</p>
+
+    </div>
+  </body>
+</html>

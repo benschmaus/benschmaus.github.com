@@ -1,0 +1,55 @@
+---
+layout: post
+title: MIDI Console Using Web MIDI API
+date: 2015-11-21 19:29:58.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- controller
+- ios music
+- midi
+- open source
+- web midi
+tags:
+- helm
+- lemur
+- musicio
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '723'
+  _publicize_twitter_user: "@factotumo"
+  _wpas_mess: MIDI Console Using Web MIDI API
+  _wpas_skip_12359968: '1'
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1585843155;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1606;}i:1;a:1:{s:2:"id";i:942;}i:2;a:1:{s:2:"id";i:488;}}}}
+  prompt_recipient_ids: a:1:{i:0;i:1;}
+  prompt_no_email: ''
+  prompt_no_featured_image: ''
+  prompt_excerpt_only: ''
+  _aioseop_keywords: helm, lemur, musicio, web midi api
+  _aioseop_description: 'A simple browser app, similar in concept to MIDI monitor,
+    that uses the Web MIDI API to display connected MIDI devices and messages sent
+    from them. '
+  _aioseop_title: MIDI Console Using Web MIDI API
+  _oembed_04029709c2d87cc1a672e68bd1eef1b2: <iframe title="Console for Web MIDI API
+    Shows MIDI Ports and Messages in Chrome" width="817" height="460" src="https://www.youtube.com/embed/uUHsz5SRcFM?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  _oembed_time_04029709c2d87cc1a672e68bd1eef1b2: '1586569220'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2015/11/midi-console-using-web-midi-api/"
+---
+<p>[<strong>Update, Jan 2017</strong>: <em>Read about the updated version of Web MIDI console <a href="https://factotumo.com/2017/01/send-midi-messages-from-your-browser-with-updated-web-midi-console/">here</a>.</em> ]</p>
+<p>I've wanted to check out the <a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a> for awhile, and after reading a nice <a href="http://www.keithmcmillen.com/blog/making-music-in-the-browser-web-midi-api/">post</a> about it on the Keith McMillen blog I decided to put together a simple browser app (for Chrome) to display connected MIDI devices and messages sent from them.  It's similar in concept to <a href="http://www.snoize.com/MIDIMonitor/">MIDI monitor</a> for OS X.</p>
+<p>You can check out the app at <a href="https://factotumo.com/web-midi-console">factotumo.com/web-midi-console</a> and the source code is available at <a href="https://github.com/benschmaus/web-midi-console">GitHub</a>.  The video below demonstrates usage of the console and shows MIDI sent from some of my hardware controllers using an <a href="http://www.iconnectivity.com/iConnectMIDI4plus">iConnectMIDI4+</a> and <a href="https://liine.net/en/products/lemur/">Lemur</a> on an iPhone using <a href="http://musicioapp.com">MusicIO</a>.  Audio is provided by <a href="http://tytel.org/helm">Helm</a>, an open source synth by <a href="https://twitter.com/matttytel">Matt Tytel</a>.</p>
+<p>Web MIDI Console is a single HTML page that uses <a href="http://www.jsviews.com/">JSRender</a> for templating along with <a href="https://jquery.com/">JQuery</a>.  In a future update I may enable sending MIDI from the console via selecting an output and providing a user-defined function.  But as it is this should be useful for inspecting MIDI connections and messages on a local system directly from Chrome.</p>
+<p>[embed]https://youtu.be/uUHsz5SRcFM[/embed]</p>

@@ -1,0 +1,50 @@
+---
+layout: post
+title: Send MIDI Messages from Your Browser with Updated Web MIDI Console
+date: 2017-01-21 15:39:04.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- midi
+- open source
+- tools
+- web midi
+tags: []
+meta:
+  _edit_last: '1'
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586604848;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1588;}i:1;a:1:{s:2:"id";i:722;}i:2;a:1:{s:2:"id";i:942;}}}}
+  _thumbnail_id: '1613'
+  _wpas_mess: Updated web MIDI console with support for message sending inspired by
+    @gbevin
+  _wpas_done_all: '1'
+  _aioseop_keywords: midi, web midi
+  _aioseop_description: The Web MIDI Console enables viewing MIDI messages received
+    from inputs and sending messages to outputs.
+  _aioseop_title: Send MIDI Messages from Your Browser with Updated Web MIDI Console
+  _wpas_skip_12359968: '1'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2017/01/send-midi-messages-from-your-browser-with-updated-web-midi-console/"
+---
+<p>I released the <a href="https://factotumo.com/2015/11/midi-console-using-web-midi-api/">first version</a> of the Web MIDI console back in November of 2015.  I'd been thinking about adding support for message sending for awhile and Geert Bevin's <a href="http://cdm.link/2017/01/send-midi-messages-faster-ever-right-command-line/">SendMIDI</a> tool gave me the inspiration to finally implement it.  Thanks, Geert!  (And apologies if I mispronounced your name in the video.)</p>
+<p>The following video shows a quick demo of the new features in the console, which you can access at <a href="https://factotumo.com/web-midi-console/">https://factotumo.com/web-midi-console/</a>.  The source code is available at <a href="https://github.com/benschmaus/web-midi-console">https://github.com/benschmaus/web-midi-console</a> if you'd like to run it locally.</p>
+<p>&nbsp;</p>
+<p><iframe src="https://www.youtube.com/embed/FzheJfR4YHo" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+<p>The API is very similar to SendMIDI, however, since it's JavaScript there are some differences.  The first is that a <a href="https://en.wikipedia.org/wiki/Fluent_interface">fluent interface</a> is used to enable chaining messages together.</p>
+<p>For example, with SendMIDI, to send a CC on channel 16 you could have:</p>
+<p><code>dev "Output Name" ch 16 cc 21 0</code></p>
+<p>This same sequence in the Web MIDI console would look like:</p>
+<p><code>device("Output Name").ch(16).cc(21, 0)</code></p>
+<p>The main syntactic difference here is the requirement for parentheses around message parameters and periods between messages.</p>
+<p>The other big difference is in the way that commands from external files/scripts are handled.  Since one of the use cases for tools like SendMIDI and this is testing device configuration, which may require many messages to be sent, it's convenient to be able to save a sequence of commands somewhere and execute them later.  In the case of the Web MIDI console, you use a script that's serves a <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> response.  You can view an example <a href="https://rawgit.com/benschmaus/web-midi-console/master/user-script-example.js">here</a>, and there's also an example of it's usage in the video.  For detailed usage information run "<em>scriptHelp()</em>" in the terminal.  But for quick experimentation there's no need for executing commands via URL; you can do everything direct from the terminal interface.</p>
+<p>Last and not least, thanks to the developer(s) of the <a href="http://terminal.jcubic.pl/">jQuery terminal emulator</a> plugin for the very configurable and easy to use code.</p>

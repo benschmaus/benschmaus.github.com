@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bitwig Controller Script for Livid Minim</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>Bitwig Controller Script for Livid Minim</h1>
+<p><b>09 Aug 2016</b></p>
+
+<p>After taking a break to move my family from the San Francisco Bay Area to Philadelphia, it's time to start writing posts again.</p>
+<p>A few months ago I put together a Bitwig controller script for Livid's wireless bluetooth MIDI controller called Minim.  In this post I'll tell you where you can get the script along with how to install and use it.  Really quickly, let's have a look at the functionality the script provides:</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/08/minim-basic-for-bitwig.png"><img class="wp-image-1441 size-full" src="/assets/archive/minim-basic-for-bitwig.png" alt="minim-basic-for-bitwig" width="702" height="338" /></a> Grab the beta release at https://github.com/benschmaus/livid-minim-bitwig/releases/tag/v0.1</p>
+<p>&nbsp;</p>
+<p>Let's get started with the setup.  You can find source code for the script on GitHub at <a href="https://github.com/benschmaus/livid-minim-bitwig">https://github.com/benschmaus/livid-minim-bitwig</a>, and a beta release of the script is available for download at <a href="https://github.com/benschmaus/livid-minim-bitwig/releases/tag/v0.1">https://github.com/benschmaus/livid-minim-bitwig/releases/tag/v0.1</a>.</p>
+<p>To install simply unzip the zip file and copy the Factotumo directory to your Bitwig controller scripts directory.</p>
+<p>Before you can use a Minim with Bitwig you need to connect it to your laptop.  To do this, see the connection guide on Livid's wiki at <a href="http://wiki.lividinstruments.com/wiki/Bluetooth_LE_MIDI_Connection#Connecting_Directly_to_OS_X_10.10.2B">http://wiki.lividinstruments.com/wiki/Bluetooth_LE_MIDI_Connection#Connecting_Directly_to_OS_X_10.10.2B</a>.  It's pretty easy.  In a nutshell, you turn on your Minim and enable bluetooth on your Mac.  Then you open up the audio MIDI setup app on your Mac and double click the Bluetooth box.  From there you can pair your Minim with your Mac.  The first time you do this you enter a pass code, which is 6 zeroes, i.e., 000000.</p>
+<p>Here's how that works:</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/08/bluetooth-audio-midi-setup-1.png"><img class="wp-image-1439 size-full" src="/assets/archive/bluetooth-audio-midi-setup-1.png" alt="bluetooth-audio-midi-setup" width="300" height="309" /></a> Double-click the bluetooth box to connect your Minim with your Mac.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/08/connect-minim-to-mac.png"><img class="wp-image-1431 size-full" src="/assets/archive/connect-minim-to-mac.png" alt="connect-minim-to-mac" width="600" height="296" /></a> Click the connect button.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/08/minim-connected.png"><img class="wp-image-1432 size-full" src="/assets/archive/minim-connected.png" alt="minim-connected" width="500" height="559" /></a> You should see a Livid Minim box popup when your Minim is successfully connected.</p>
+<p>&nbsp;</p>
+<p>Okay.  Now let's add Minim as a controller in Bitwig.  To do this (after you've installed the script, of course!), open the preferences dialog and select the controllers tab.  Click the "add controller manually" button, scroll down to "Factotumo" and select "Minim (Basic)".</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/08/minim-basic-controller-script.png"><img class="wp-image-1435 size-full" src="/assets/archive/minim-basic-controller-script.png" alt="minim-basic-controller-script" width="600" height="284" /></a> If the script is installed you should see a Factotumo menu under controllers where you can select the Minim (Basic) script.</p>
+<p>&nbsp;</p>
+<p>The last step is to select the MIDI input port to use for Minim.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/08/minim-midi-input.png"><img class="wp-image-1436 size-full" src="/assets/archive/minim-midi-input.png" alt="minim-midi-input" width="600" height="91" /></a> Select the "Livid Minim Bluetooth" MIDI input.</p>
+<p>&nbsp;</p>
+<p>Alright, now that we've got a Minim connected and Bitiwig is configured to receive and act upon MIDI data sent from it, let's see how the script works.  The image below provides a visual overview of functionality and here's a text summary:</p>
+<ul>
+<li>Toggle playback</li>
+<li>Toggle record</li>
+<li>Easy mute of tracks 1-8</li>
+<li>Trigger scenes 1-8</li>
+<li>Selected track
+<ul>
+<li>mute</li>
+<li>solo</li>
+<li>record</li>
+<li>volume</li>
+</ul>
+</li>
+<li>"volume style" buttons on side of Minim (black lines in the diagram) enable prev/next track navigation</li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/08/minim-basic-for-bitwig.png"><img class="wp-image-1441 size-full" src="/assets/archive/minim-basic-for-bitwig.png" alt="minim-basic-for-bitwig" width="702" height="338" /></a> Functionality of Minim controller script for Bitwig.</p>
+<p>&nbsp;</p>
+<p>And that's all there is to it!  Note that I've called this script "Minim (Basic)" because I intend to write another script implementation that is a more direct port of Livid's Minim script for Ableton Live, which is available at <a href="http://wiki.lividinstruments.com/wiki/Minim_Ableton_Live_Remote_Script">http://wiki.lividinstruments.com/wiki/Minim_Ableton_Live_Remote_Script</a>.</p>
+<p>Happy Bitwigging with your Minim, and let me know if you use the script and have feedback to share!</p>
+
+    </div>
+  </body>
+</html>

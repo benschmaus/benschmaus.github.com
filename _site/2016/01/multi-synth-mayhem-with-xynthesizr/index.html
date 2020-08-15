@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multi-synth Mayhem with Xynthesizr</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>Multi-synth Mayhem with Xynthesizr</h1>
+<p><b>21 Jan 2016</b></p>
+
+<p><a href="https://geo.itunes.apple.com/us/app/xynthesizr-32-step-matrix/id720810459?mt=8&amp;at=1001l74A&amp;ct=1001l74A">Xynthesizr</a> continues to be a great sequencer for iOS, particularly for the iPad form factor.  It has some powerful features and manages to house them all within a tidy interface that puts a straightforward sequencing grid front and center.   And according to a recent Twitter conversation with Yuri Turov, it sounds like he's working on support for Ableton's Link protocol, which will make Xynthesizr even more compelling.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/xynth-link-support.png" rel="attachment wp-att-1007"><img class="alignnone size-full wp-image-1007" src="/assets/archive/xynth-link-support.png" alt="xynth-link-support" width="600" height="361" /></a></p>
+<p>In the video below, I demonstrate how you can use Xynthesizr to control multiple iOS synths and inject mutations into a sequence using its pattern morphing features.  For the time-constrained viewer, to jump right to the section on configuring Xynthesizr to use multiple MIDI channels click <a href="https://www.youtube.com/watch?v=Llh36Q4BEoA#t=1m47s">here</a>.  And to jump to the section on applying randomization click <a href="https://www.youtube.com/watch?v=Llh36Q4BEoA#t=4m48s">here</a>.</p>
+<p>[embed]https://youtu.be/Llh36Q4BEoA[/embed]</p>
+<p>Here's a summary of the video with some additional thoughts.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/audiobus-mayhem-preset.jpg" rel="attachment wp-att-996"><img class="alignnone size-full wp-image-996" src="/assets/archive/audiobus-mayhem-preset.jpg" alt="audiobus-mayhem-preset" width="640" height="480" /></a></p>
+<p>The <a href="https://geo.itunes.apple.com/us/app/audiobus/id558513570?mt=8&amp;at=1001l74A&amp;ct=1001l74A">Audiobus</a> preset uses Xynthesizr (3rd from left in the top row) to control three synth apps: <a href="https://geo.itunes.apple.com/us/app/lorentz-polyphonic-synthesizer/id1016055431?mt=8&amp;at=1001l74A&amp;ct=1001l74A">Lorentz</a>, <a href="https://geo.itunes.apple.com/us/app/isem-synthesizer/id673921187?mt=8&amp;at=1001l74A&amp;ct=1001l74A">iSEM</a>, and <a href="https://geo.itunes.apple.com/us/app/thor-polysonic-synthesizer/id660195946?mt=8&amp;at=1001l74A&amp;ct=1001l74A">Thor</a>.  Each synth app is sending its audio output to <a href="https://geo.itunes.apple.com/us/app/mimix-mixer-for-audiobus/id931404307?mt=8&amp;at=1001l74A&amp;ct=1001l74A">MiMiX</a>, an excellent utility app that let's you manage audio from up to 8 apps as part of a single mix.  Xynthesizr's sound engine is disabled in this use case but it's included in the Audiobus preset to make navigating between the apps easier and to allow us to start Xynthesizr's sequence engine from any of the other apps in the preset via the Audiobus taskbar.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/xynth-grid.jpg" rel="attachment wp-att-998"><img class="alignnone size-full wp-image-998" src="/assets/archive/xynth-grid.jpg" alt="xynth-grid" width="640" height="480" /></a></p>
+<p>Here's Xynthesizr's main screen.  A control panel at the bottom lets you access configuration settings.  Note that the sequencing grid is divided into color coded sections.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/xynth-multi-midi.jpg" rel="attachment wp-att-1000"><img class="alignnone size-full wp-image-1000" src="/assets/archive/xynth-multi-midi.jpg" alt="xynth-multi-midi" width="640" height="480" /></a></p>
+<p>Under the MIDI config dialog the "Channel Mappings" section is the key to controlling multiple synths from a single sequence.  Each color coded section can be configured to send data over a separate MIDI channel.  By configuring your synths to receive MIDI data on thoses channels you can create sequences that drive multiple synths.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/mimix-mayhem.jpg" rel="attachment wp-att-997"><img class="alignnone size-full wp-image-997" src="/assets/archive/mimix-mayhem.jpg" alt="mimix-mayhem" width="640" height="480" /></a></p>
+<p>Here's a view of MiMiX and you can see that there are dedicated tracks for each of the synth apps.  It supports MIDI learn functionality which makes it easy to integrate with external controllers.  It's a great app for <a href="https://factotumo.com/2015/08/mimix-2-0-and-multi-app-jams-on-ios/">jamming with multiple apps</a>.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/xynth-morphing.jpg" rel="attachment wp-att-999"><img class="alignnone size-full wp-image-999" src="/assets/archive/xynth-morphing.jpg" alt="xynth-morphing" width="640" height="480" /></a></p>
+<p>The red "morph" section is where you can configure Xynthesizr to mutate your sequence.  There are two styles of mutation.  One is a randomization function.  When using the randomization function the 3 sliders to the right of the "life like rule" are used.  There are sliders to control a) the probability that the sequence will be altered on a given iteration of playback, b) the amount of variation influencing rhythm (the max "x" param), and c) the amount of variation influencing pitch (max "y" param).  The other method of injecting mutation into a sequence is by using the life like rules function, which apply <a href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular automation</a> rules to produce variance in the sequencing grid.  There are a couple of built-in rules and you can define your own custom rules to govern the lifecycle of cells within the grid.</p>
+<p>You can create conservative life rules or randomization configurations, which create subtle changes to a pattern over time, largely preserving the structure of the original sequence or you can create rules that very quickly deviate from the starting state.  I've had much more fun with the former approach and attempting to create movement while keeping the original vibe of the starting state intact.</p>
+<p>The morphing feature is definitely something you should spend some time with if you have Xynthesizr and is probably a great reason to pick it up if you don't have it.</p>
+
+    </div>
+  </body>
+</html>
