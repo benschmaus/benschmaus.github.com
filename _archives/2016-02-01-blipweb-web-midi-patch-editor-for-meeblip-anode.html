@@ -1,0 +1,61 @@
+---
+layout: post
+title: 'blipweb: Web MIDI Patch Editor for MeeBlip anode'
+date: 2016-02-01 23:20:28.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- midi
+- open source
+- synths
+- web midi
+tags:
+- blipweb
+- meeblip
+meta:
+  _edit_last: '1'
+  prompt_no_email: ''
+  prompt_no_featured_image: ''
+  prompt_excerpt_only: ''
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1584953677;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1101;}i:1;a:1:{s:2:"id";i:942;}i:2;a:1:{s:2:"id";i:1114;}}}}
+  prompt_recipient_ids: a:1:{i:0;i:1;}
+  _wpas_done_all: '1'
+  _wpas_mess: 'blipweb: Web MIDI patch editing/sharing for @MeeBlip anode'
+  prompt_sent_ids: a:1:{i:0;i:1;}
+  _thumbnail_id: '1088'
+  _wpas_skip_12359968: '1'
+  _aioseop_keywords: meeblip, web midi
+  _aioseop_description: 'blipweb is a Web MIDI app for creating and sharing patches
+    for MeeBlip anode. '
+  _aioseop_title: 'blipweb: Web MIDI Patch Editor for MeeBlip anode'
+  _oembed_9abf9df5a0e6ad1c54f0966ec2b7fe74: '<iframe title="blipweb: web MIDI patch
+    editor for MeeBlip anode" width="817" height="613" src="https://www.youtube.com/embed/ToHkEqEFFlI?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>'
+  _oembed_time_9abf9df5a0e6ad1c54f0966ec2b7fe74: '1586572954'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2016/02/blipweb-web-midi-patch-editor-for-meeblip-anode/"
+---
+<p>[<em><strong>Update 2/9/16:</strong></em> <em>read about blipweb on <a href="http://createdigitalmusic.com/2016/02/now-you-can-edit-a-meeblip-synth-from-a-web-browser/">Create Digital Music.</a></em>]</p>
+<p>[<em><strong>Update 2/7/16: </strong>read about new blipweb features <a href="https://factotumo.com/2016/02/midi-only-params-and-more-for-blipweb/">here</a>.</em>]</p>
+<p>Somewhere around the holidays I found myself thinking about writing a patch editor for MeeBlip using the Web MIDI API. I found a <a href="https://liine.net/en/community/user-library/view/516/">MeeBlip SE editor</a> for <a href="https://liine.net/en/products/lemur/">Lemur</a> but thought it'd be cool to have a patch editor that ran right in the browser and let you share patches with good old-fashioned URLs.  Then I got busy with other things.</p>
+<p>But earlier in January I learned and <a href="https://factotumo.com/2016/01/yamaha-bolsters-web-midi-with-soundmondo/">wrote</a> about <a href="http://soundmondo.yamahasynth.com">Soundmondo</a>, a Web MIDI patch editing/sharing site for Yamaha <a href="http://usa.yamaha.com/products/music-production/synthesizers/reface/concept/">reface synths</a>, and <a href="http://www.rolandus.com/promos/roland_boutique">Roland Boutique</a> series patch editors by <a href="http://www.breadandbuttersounds.com/">breadandbuttersounds</a>, and that motivated me to try and build something for MeeBlip.</p>
+<p>So over the weekend, I dusted off my (dust-caked) web UI chops and set to work hacking on a basic editor for MeeBlip.</p>
+<p>The result is an editor called <a href="https://factotumo.com/blipweb/">blipweb</a>.  It runs in Chrome and lets you edit and share patches for the MeeBlip anode LE synth.  Simply select your MIDI port and channel number, adjust the knobs and switches to your liking, and click "send to meeblip" (or hit enter) to hear the fruits of your sound design labor.  If you get a sound that you like click the "get patch link" button and a) bookmark the URL to a "meeblip" bookmarks folder, b) put it in a web page and share it with other MeeBlip users, c) share it on twitter via a #blipweb tag, d) email it to a friend, e) etc.</p>
+<p>The editor runs <a href="https://factotumo.com/blipweb/">here</a> and I've also posted source code to a GitHub <a href="https://github.com/benschmaus/blipweb">repo</a>.  There are likely a few rough edges and missing pieces (e.g., there are a few parameters I have yet to add in the UI) but the basic functionality works on my system.  If you get a chance to check it out and have feedback, send it my way.</p>
+<p>The short video below shows it in use.</p>
+<p>&nbsp;</p>
+<iframe title="blipweb: web MIDI patch
+    editor for MeeBlip anode" width="817" height="613" src="https://www.youtube.com/embed/ToHkEqEFFlI?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>

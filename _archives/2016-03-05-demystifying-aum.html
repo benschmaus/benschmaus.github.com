@@ -1,0 +1,83 @@
+---
+layout: post
+title: Demystifying AUM
+date: 2016-03-05 13:56:58.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- ios music
+- midi
+- mobile
+- tools
+tags:
+- audiobus
+- aum
+- mimix
+meta:
+  _edit_last: '1'
+  prompt_no_email: ''
+  prompt_no_featured_image: ''
+  prompt_excerpt_only: ''
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586577656;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:282;}i:1;a:1:{s:2:"id";i:806;}i:2;a:1:{s:2:"id";i:993;}}}}
+  _thumbnail_id: '1208'
+  prompt_recipient_ids: a:6:{i:0;i:1;i:1;i:3;i:2;i:4;i:3;i:5;i:4;i:6;i:5;i:7;}
+  _wpas_done_all: '1'
+  _wpas_mess: AUM by @j_liljedahl offers impressive audio routing/mixing for iOS;
+    @AudiobusApp remains essential integration tool
+  prompt_sent_ids: a:6:{i:0;i:1;i:1;i:3;i:2;i:4;i:3;i:5;i:4;i:6;i:5;i:7;}
+  _wpas_skip_12359968: '1'
+  _aioseop_keywords: ios music,mobile music,audio integration,aum,mimix,audiobus
+  _aioseop_description: AUM is a well-executed app with an impressive array of functionality
+    but Audiobus is still an essential app for iOS music.
+  _aioseop_title: Demystifying AUM
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2016/03/demystifying-aum/"
+---
+<p><a href="https://geo.itunes.apple.com/us/app/aum-audio-mixer/id1055636344?mt=8&amp;at=1001l74A">AUM</a>, which <a href="http://kymatica.com/forum/index.php/topic,90.0.html?PHPSESSID=ih7idj6icvp7b2v0gis8b0qd64">recently</a> hit Apple's app store, is an audio integration toolkit for iOS.  The name works as an acronym (<strong>A</strong>udio <strong>U</strong>tility <strong>M</strong>ixer) and is ostensibly a reference to the spiritual <a href="https://en.wikipedia.org/wiki/Om">symbol</a> and perhaps even the trippy <a href="https://en.wikipedia.org/wiki/Om_(John_Coltrane_album)">Coltrane album</a>.  Like the name, the app works on multiple levels.</p>
+<p>As described in the <a href="http://www.musicappblog.com/aum-review/">in-depth review</a> on Music App Blog, AUM is part <a href="https://geo.itunes.apple.com/us/app/audiobus/id558513570?mt=8&amp;at=1001l74A">Audiobus</a> and part <a href="https://geo.itunes.apple.com/us/app/mimix-mixer-for-audiobus/id931404307?mt=8&amp;at=1001l74A">MiMiX</a>.  It rolls the functions of both into a single app and throws a few things of its own into the mix (ha!).  I've written a <a href="https://factotumo.com/tag/mimix/">few posts</a> about MiMiX and Audiobus and, having spent a few days using AUM, thought I would share some impressions about it and how it fits into the broader iOS music ecosystem.</p>
+<p>To get a sense for how AUM works, let's revisit the Audiobus and MiMiX setup described in <a href="https://factotumo.com/2016/01/multi-synth-mayhem-with-xynthesizr/">Multi-synth Mayhem</a> and see how that translates to AUM.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/audiobus-mayhem-preset.jpg" rel="attachment wp-att-996"><img class="wp-image-996 size-full" src="{{ site.baseurl }}/assets/archive/audiobus-mayhem-preset.jpg" alt="audiobus-mayhem-preset" width="640" height="480" /></a> In this Audiobus preset three synths feed audio into MiMiX channels. Xynthesizr is included to make playback easy using the Audiobus connection panel.</p>
+<p>&nbsp;</p>
+<p>The screenshot above shows the Audiobus preset used for multi-synth mayhem.  There are three synths that send their audio into MiMiX.  Xynthesizr is used solely as a MIDI controller and is included in the preset so it's accessible via the Audiobus connection panel.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/01/mimix-mayhem.jpg" rel="attachment wp-att-997"><img class="wp-image-997 size-full" src="{{ site.baseurl }}/assets/archive/mimix-mayhem.jpg" alt="mimix-mayhem" width="640" height="480" /></a> The output from each synth is available as a separate channel in MiMiX.</p>
+<p>&nbsp;</p>
+<p>MiMiX is a simple but well-designed mixer utility for Audiobus.  It has a MIDI learn implementation, which makes integration with an external MIDI controller dirt simple. Being able to control the mix with an external controller means you can focus on playing instruments on the iPad without having to bounce back to MiMiX to tweak panning, levels, etc.</p>
+<p>Now let's look at the same setup in AUM.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/03/audiobus-aum.jpg" rel="attachment wp-att-1207"><img class="wp-image-1207 size-full" src="{{ site.baseurl }}/assets/archive/audiobus-aum.jpg" alt="audiobus-aum" width="640" height="480" /></a> The Audiobus preset using AUM instead of MiMiX is straightforward. Just replace MiMiX with AUM in the audio output slot for each synth.</p>
+<p>&nbsp;</p>
+<p>In the screenshot above the Audiobus preset is almost identical to the one we used with MiMiX.  We simply send the audio for each synth into AUM instead of MiMiX.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/03/multi-mayhem-aum.jpg" rel="attachment wp-att-1208"><img class="wp-image-1208 size-full" src="{{ site.baseurl }}/assets/archive/multi-mayhem-aum.jpg" alt="multi-mayhem-aum" width="640" height="480" /></a> AUM provides more sophisticated mixing controls than MiMiX and also supports MIDI learn.  Note the "AB IN" denoting inputs from Audiobus along with the Audiobus connection panel with playback triggers for Xynthesizr.</p>
+<p>&nbsp;</p>
+<p>The above screenshot shows AUM with inputs coming from Audiobus.  In addition to controlling the pan settings for each channel you can drop additional effects into the audio processing chain.  Instead of bussing everything to a master channel by default, AUM supports 8 mix busses, which lets you create your own groupings of channels to control as discrete sub-mixes.  In the example here we're simply sending the output from each synth to the same mix bus (bus "A") and then creating a master channel by sending the audio for that mix bus out to the speaker.</p>
+<p>An important detail to note is that you're not limited to inputs from Audiobus with AUM.  It also supports <a href="http://9to5mac.com/2013/06/12/ios-7s-new-inter-app-audio-introduces-universal-audio-routing-between-apps/">IAA</a> (Inter-app Audio) and <a href="http://9to5mac.com/2015/10/05/first-look-ios-9-audio-unit-plug-ins/">AU</a> (Audio Units) inputs, covering the complete spectrum of audio technologies currently available under iOS.</p>
+<p>Since AUM supports IAA and AU, it's possible to achieve the multi-synth mayhem setup without Audiobus.  However, while this is functional, I've found it to be suboptimal, leading me to the conclusion that <em><strong>AUM is complementary, and even somewhat orthogonal, to Audiobus</strong></em>.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/03/multi-mayhem-aum-iaa.jpg" rel="attachment wp-att-1210"><img class="wp-image-1210 size-full" src="{{ site.baseurl }}/assets/archive/multi-mayhem-aum-iaa.jpg" alt="multi-mayhem-aum-iaa" width="640" height="480" /></a> Using IAA enables you to connect apps without Audiobus but you miss out on app triggers and easy navigation supported by the Audiobus connection panel.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/03/aum-isem-iaa.jpg" rel="attachment wp-att-1212"><img class="wp-image-1212 size-full" src="{{ site.baseurl }}/assets/archive/aum-isem-iaa.jpg" alt="aum-isem-iaa" width="640" height="480" /></a> iSEM when used as an IAA audio input with AUM. App navigation is clunky without the Audiobus connection panel.</p>
+<p>&nbsp;</p>
+<p>The relationship between Audiobus and AUM has come up as a topic in several <a href="http://www.synthtopia.com/content/2016/02/24/kymatica-aum-an-audio-mixer-for-ios/">posts</a> I've come across.  Technically you can achieve the same routing configurations with AUM as you can with Audiobus as long as the apps you're using support IAA or AU.  IAA has been around for a few years now and is pretty broadly supported.  AU is new as of iOS 9 and isn't widely supported.  Despite being supported by many apps, IAA just doesn't seem to work as well as Audiobus in my experience.  AU looks promising and would bring the user experience on iOS closer to that of laptops, but given the newness of the format we'll have to wait and see how adoption grows over the course of the year.</p>
+<p>The main thing about Audiobus that makes it compelling is the connection panel.  This may seem superficial but it's actually pretty important.  <a href="https://developer.audiob.us/doc/_triggers.html">Triggers</a> give applications a <a href="https://en.wikipedia.org/wiki/Hooking">hook</a> into the connection panel allowing them to extend its functionality with custom behaviors.  Remote triggers, available as part of <a href="https://geo.itunes.apple.com/us/app/audiobus-remote/id964755325?mt=8&amp;at=1001l74A">AB Remote</a>, make Audiobus an even more powerful tool for controlling applications that are part of multi-app production configurations.</p>
+<p>Let's have another look at the AUM config using Audiobus instead of IAA for audio in.  You can see that Xynthesizr implements triggers that surface transport controls in the connection panel.  This means you can start/stop Xynthesizr from AUM, Lorentz, Thor, iSEM, or, of course, Xynthesizr itself.  The panel and triggers contained within let you <em><strong>interact with one app from any other</strong></em> that's part of an Audiobus preset.  The extensibility of triggers and accessibility of the panel are a powerful combination and this is a key differentiator between AUM with Audiobus vs AUM with IAA.  AUM is purely a glue app while Audiobus is both a glue app <em>and</em> an SDK that supporting apps implement.  Audiobus offers a better user experience compared to IAA.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/03/multi-mayhem-aum.jpg" rel="attachment wp-att-1208"><img class="size-full wp-image-1208 aligncenter" src="{{ site.baseurl }}/assets/archive/multi-mayhem-aum.jpg" alt="multi-mayhem-aum" width="640" height="480" /></a></p>
+<p>&nbsp;</p>
+<p>As an IAA host, AUM should be able to trigger playback in the apps that it's hosting, and indeed, if you drop Xynthesizr into the AUM preset via IAA it will get tempo information from AUM.  However, it does not respond to transport state changes from AUM so you need to start playback from within Xynthesizr itself.  The <a href="http://kymatica.com/Software/AUM#faq">AUM FAQ</a> (see "How do I start other Link enabled apps from AUM?") calls for more developers to implement IAA host transport state but this isn't the case with Xyntheiszr (which I'd also love to see updated to support Link).  And app navigation isn't quite as good with IAA because you need to pass through the host app as a hub when moving between instrument apps.  AU makes instruments easily accessible from within the host but there just aren't that many apps implementing AU yet.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/03/xynth-aum-iaa.jpg" rel="attachment wp-att-1240"><img class="wp-image-1240 size-full" src="{{ site.baseurl }}/assets/archive/xynth-aum-iaa.jpg" alt="xynth-aum-iaa" width="640" height="480" /></a> Xynthesizr doesn't respond to transport changes from the host app when used via IAA with AUM as host.</p>
+<p>&nbsp;</p>
+<p>AUM is a well-executed app with an impressive array of functionality, and Audiobus is still an essential app for iOS music.  If you've already got Audiobus and AB remote I think you'll continue to get value out of them if you buy AUM.  And if you've got AUM and are wondering whether or not to get Audiobus, I recommend you pick it up; I think you'll find it's functions are additive and complementary to AUM.</p>
+<p>For more details on AUM check out the <a href="http://www.musicappblog.com/aum-review/">Music App Blog review</a> or AudioNewsRoom has a pretty <a href="http://audionewsroom.net/2016/02/kymatica-aum-review-a-first-look-the-best-mixer-app-for-ios-live-performers.html">detailed review</a>, too.</p>

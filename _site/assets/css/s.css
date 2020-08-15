@@ -1,0 +1,15 @@
+body { padding: 0; margin: 0; background-color: #fff; font-family: Optima,Candara; }
+
+.nav { background-color: #fff; padding: 8px; }
+
+.nav img { float: left; }
+
+nav { padding-top: 14px; margin-right: 10px; }
+
+nav a { margin-right: 8px; }
+
+.current { font-weight: bold; }
+
+.content { padding: 8px; }
+
+/*# sourceMappingURL=s.css.map */

@@ -1,0 +1,67 @@
+---
+layout: post
+title: Use Bitwig Group Tracks for NI Stems
+date: 2016-04-04 21:01:38.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- daws
+- recording
+- tools
+tags:
+- bitwig
+- native instruments
+- stems
+meta:
+  _edit_last: '1'
+  prompt_no_email: ''
+  prompt_no_featured_image: ''
+  prompt_excerpt_only: ''
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586580202;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:506;}i:1;a:1:{s:2:"id";i:371;}i:2;a:1:{s:2:"id";i:1729;}}}}
+  prompt_recipient_ids: a:6:{i:0;i:1;i:1;i:3;i:2;i:4;i:3;i:5;i:4;i:6;i:5;i:7;}
+  _wpas_done_all: '1'
+  _wpas_mess: Use @Bitwig Group Tracks for NI Stems /cc @BitwigBeats
+  prompt_sent_ids: a:6:{i:0;i:1;i:1;i:3;i:2;i:4;i:3;i:5;i:4;i:6;i:5;i:7;}
+  _wpas_skip_12359968: '1'
+  _thumbnail_id: '1348'
+  _aioseop_keywords: bitwig, native instruments, ni stems, stems
+  _aioseop_description: Use group tracks in Bitwig to easily create sub-mixes that
+    you can use to create NI Stems files.
+  _aioseop_title: Use Bitwig Group Tracks for NI Stems
+  _oembed_e9c3bac36ba68ed34e74f676086f66d4: <iframe title="Native Instruments STEMS
+    Explained - Ultimate guide to making your own for Traktor" width="817" height="460"
+    src="https://www.youtube.com/embed/r0ceTdh70cU?feature=oembed" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  _oembed_time_e9c3bac36ba68ed34e74f676086f66d4: '1586623832'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2016/04/use-bitwig-group-tracks-for-ni-stems/"
+---
+<p>I was reading a post on <a href="http://www.bitwigbeats.com/how-to-export-bitwig-studio-projects-as-ni-stems-for-traktor-djs/">Bitwig Beats</a> a few days ago about how to create <a href="http://www.stems-music.com/">NI Stems</a> files using Bitwig.  A Stems file - which uses the <a href="https://en.wikipedia.org/wiki/MPEG-4_Part_14">.mp4 container</a> format - packs 4 audio tracks ("stems"), plus a master track, into a single file.   Each of the 4 stems in the file can be independently controlled for remixing using <a href="http://www.stems-music.com/stems-partners/">compatible hardware or software</a> (i.e., Traktor).  There's a free <a href="http://www.stems-music.com/stem-creator-tool/">Stems Creator</a> app that makes creating Stems files pretty straightforward, but before you can create one you need to have an export of your master track along with 4 additional tracks to use as the stems in your Stem file.</p>
+<p>The Bitwig Beats post does a great job explaining the overall process, including how to use the Stems Creator app and even how to use Photoshop templates from NI to create Stems-branded artwork for your tracks.  But there's an optimization for creating your stems in Bitwig!</p>
+<p>The method suggested in the post is to create 4 audio tracks that serve as sub-mixes (e.g., one for drums, another for vocals, another for lead, and the last for bass) and use them to capture the tracks (i.e., stems) for your Stem file.  In this approach you manually route audio to 1 of the 4 sub-mix tracks and then you export the audio for each sub-mix.</p>
+<p>That for sure works but there's an easier way: <em>group tracks</em>.  Not only are group tracks great for keeping your projects tidy, but each one also functions as a sub-mix.  No manual routing is necessary with group tracks as the audio for each member track is automatically routed to the input of the group track (which is then routed to the master).  Let's take a closer look.</p>
+<p>Here's a collapsed group track composed of 3 "member" tracks.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/04/group-track-collapsed.png" rel="attachment wp-att-1335"><img class="wp-image-1335 size-full" src="{{ site.baseurl }}/assets/archive/group-track-collapsed.png" alt="group-track-collapsed" width="900" height="76" /></a> A collapsed group track in Bitwig.</p>
+<p>&nbsp;</p>
+<p>And here we have the same group track but expanded to show each of the member tracks.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/04/group-track-expanded.png" rel="attachment wp-att-1336"><img class="wp-image-1336 size-full" src="{{ site.baseurl }}/assets/archive/group-track-expanded.png" alt="group-track-expanded" width="900" height="197" /></a> A group track in Bitwig expanded to show each member track.</p>
+<p>&nbsp;</p>
+<p>In the following screen we see that the output of the "kick" member track is sent to "drums Master".  Each member of the group is bused to the input of the group track.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/04/group-track-audio-for-member2.png" rel="attachment wp-att-1339"><img class="wp-image-1339 size-full" src="{{ site.baseurl }}/assets/archive/group-track-audio-for-member2.png" alt="group-track-audio-for-member2" width="400" height="603" /></a> Audio output for each member track is sent to the group track.</p>
+<p>&nbsp;</p>
+<p>The last step is to export the audio for your group track.  As shown in the screen below, using Bitwig's audio export dialog you can export audio for group tracks (or any other type of track for that matter).</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/04/group-track-export-1.png" rel="attachment wp-att-1343"><img class="wp-image-1343 size-full" src="{{ site.baseurl }}/assets/archive/group-track-export-1.png" alt="group-track-export" width="600" height="367" /></a> Exporting the "drums" group track gets you an audio file containing all 3 member tracks: "kick", "snare", and "hat".</p>
+<p>&nbsp;</p>
+<p>Group tracks are your friend.  They'll make your projects easier to navigate and cut down on the manual audio routing work you need to do to create sub-mixes.  The more you let the software do for you, the more time you have to be creative!</p>
+<p>And last but not least, here's the Bitwig Beats video in case you're wondering how to use Stems Creator or create Stems-branded graphics for your tracks.</p>
+<p>[embed]https://youtu.be/r0ceTdh70cU[/embed]</p>

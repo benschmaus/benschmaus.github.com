@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bitwig Controller Script for Clip Launching with Korg nanoPAD2</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>Bitwig Controller Script for Clip Launching with Korg nanoPAD2</h1>
+<p><b>30 Oct 2015</b></p>
+
+<p>One of the features that got me interested in Bitwig was its <a href="http://www.bitwig.com/en/community/control_scripts.html">open JavaScript API</a> for integrating MIDI controllers.  I'd been meaning to try it out for awhile and this week I finally got around to writing a script for my <a href="http://www.korg.com/us/products/controllers/nanopad2/">Korg nanoPAD2</a> that lets you start and stop clip launcher clips.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/10/korg-nanopad2.png"><img class="wp-image-675 size-full" src="/assets/archive/korg-nanopad2.png" alt="korg-nanopad2" width="600" height="183" /></a> The Korg nanoPAD2 controller.</p>
+<p>&nbsp;</p>
+<p>The nanoPAD2 has 2 rows of 8 pads each.  By default the pads send MIDI note on/off messages and there are 4 selectable scenes that let you switch to higher note ranges.  In total this works out to a grid of 2 * 8 * 4 = 64 notes.  The script lets you use the pads to trigger clips in Bitwig. It supports 8 tracks and 8 scene clips per track.  The top row of the nanoPAD2 corresponds to track 1 in Bitwig with each pad in the row corresponding to a scene clip in Bitwig's clip launcher.  You use the scene button on the nanoPAD2 to navigate from track 1 and 2 (scene 1 on the nano) to tracks 3 and 4 (scene 2) and so on.</p>
+<p>If you'd like to try the script out you can find it at <a href="https://github.com/benschmaus/nanopad2-bitwig">https://github.com/benschmaus/nanopad2-bitwig</a>.</p>
+<p>Bitwig's API is very full-featured and well-documented, and it was pretty straightforward to get a script up and running.</p>
+<p>To help users get bootstrapped Bitwig ships with a scripting guide along with API docs, which is enough to get you going if you're familiar with JavaScript.  In addition to the built-in docs, there's also a nice series of scripting <a href="http://www.keithmcmillen.com/category/blog/tutorials/bitwig-studio/">tutorials</a> on the Keith McMillen blog.  Thomas Helzle's <a href="http://blog.thomashelzle.de/tag/bitwig-studio/">blog</a> also has some good Bitwig tutorial content, and KVR has a <a href="http://www.kvraudio.com/forum/viewtopic.php?f=268&amp;t=424265">Bitwig sub-forum</a> on controller scripting with links to other <a href="http://www.kvraudio.com/forum/viewtopic.php?f=268&amp;t=424463">developer resources</a>.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/10/bitwig-script-guide-api-docs.png"><img class="wp-image-666 size-full" src="/assets/archive/bitwig-script-guide-api-docs.png" alt="bitwig-script-guide-api-docs" width="400" height="345" /></a> A scripting guide and API docs are accessible from Bitwig's help menu.</p>
+<p>&nbsp;</p>
+<p>For script development, Bitwig provides a console that lets you view log output from your script.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/10/bitwig-script-console.png"><img class="wp-image-669 size-full" src="/assets/archive/bitwig-script-console.png" alt="bitwig-script-console" width="800" height="568" /></a> Bitwig's script console - a basic but effective development tool.</p>
+<p>&nbsp;</p>
+<p>It's awesome that Bitwig enables users to customize the behavior of their MIDI controllers through the use of open JavaScript APIs.  This is one of the things that sets Bitwig apart from other DAWs on the market and I hope we'll continue to see great support for end-user programmability and extensibility in Bitwig's feature set in the future.</p>
+<p>And feel free to drop me a line if you check out the nanoPAD2 script and have feedback!</p>
+
+    </div>
+  </body>
+</html>

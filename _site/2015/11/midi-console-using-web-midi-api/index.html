@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MIDI Console Using Web MIDI API</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>MIDI Console Using Web MIDI API</h1>
+<p><b>21 Nov 2015</b></p>
+
+<p>[<strong>Update, Jan 2017</strong>: <em>Read about the updated version of Web MIDI console <a href="https://factotumo.com/2017/01/send-midi-messages-from-your-browser-with-updated-web-midi-console/">here</a>.</em> ]</p>
+<p>I've wanted to check out the <a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a> for awhile, and after reading a nice <a href="http://www.keithmcmillen.com/blog/making-music-in-the-browser-web-midi-api/">post</a> about it on the Keith McMillen blog I decided to put together a simple browser app (for Chrome) to display connected MIDI devices and messages sent from them.  It's similar in concept to <a href="http://www.snoize.com/MIDIMonitor/">MIDI monitor</a> for OS X.</p>
+<p>You can check out the app at <a href="https://factotumo.com/web-midi-console">factotumo.com/web-midi-console</a> and the source code is available at <a href="https://github.com/benschmaus/web-midi-console">GitHub</a>.  The video below demonstrates usage of the console and shows MIDI sent from some of my hardware controllers using an <a href="http://www.iconnectivity.com/iConnectMIDI4plus">iConnectMIDI4+</a> and <a href="https://liine.net/en/products/lemur/">Lemur</a> on an iPhone using <a href="http://musicioapp.com">MusicIO</a>.  Audio is provided by <a href="http://tytel.org/helm">Helm</a>, an open source synth by <a href="https://twitter.com/matttytel">Matt Tytel</a>.</p>
+<p>Web MIDI Console is a single HTML page that uses <a href="http://www.jsviews.com/">JSRender</a> for templating along with <a href="https://jquery.com/">JQuery</a>.  In a future update I may enable sending MIDI from the console via selecting an output and providing a user-defined function.  But as it is this should be useful for inspecting MIDI connections and messages on a local system directly from Chrome.</p>
+<p>[embed]https://youtu.be/uUHsz5SRcFM[/embed]</p>
+
+    </div>
+  </body>
+</html>

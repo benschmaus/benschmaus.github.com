@@ -1,0 +1,48 @@
+---
+layout: post
+title: Web Audio/MIDI Synth Roundup
+date: 2015-09-21 20:27:19.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- open source
+- web audio
+- web midi
+tags: []
+meta:
+  _edit_last: '1'
+  _publicize_twitter_user: "@factotumo"
+  _wpas_done_all: '1'
+  _thumbnail_id: '495'
+  _wpas_skip_12359968: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586604054;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:647;}i:1;a:1:{s:2:"id";i:942;}i:2;a:1:{s:2:"id";i:722;}}}}
+  _oembed_7bdb38a7ff16089a23fbf06943eee0b1: <iframe title="Game of Thrones theme on
+    three Commodore 64 sound chips" width="817" height="460" src="https://www.youtube.com/embed/EZtoDhig00U?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  _oembed_time_7bdb38a7ff16089a23fbf06943eee0b1: '1586642702'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2015/09/web-audiomidi-synth-roundup/"
+---
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/web-audio-synths.png"><img class="alignnone size-full wp-image-496" src="{{ site.baseurl }}/assets/archive/web-audio-synths.png" alt="web-audio-synths" width="640" height="580" /></a></p>
+<p>Having learned about a number of new Web Audio/MIDI instruments over the past few months, I thought I'd put together a quick roundup of what I've read about.</p>
+<p>The most recent synth is the <a href="http://nicroto.github.io/viktor/">Viktor NV-1</a> by <a href="https://about.me/tsenkov">Nikolay Tsenkov</a>.  (He codes, sings, and boxes!)  You can find the source code for Viktor at <a href="https://github.com/nicroto/viktor">github.com/nicroto/viktor</a> and the audio engine is at <a href="https://github.com/nicroto/viktor-nv1-engine">github.com/nicroto/viktor-nv1-engine</a>.  It's got a surprising number of built-in presets and supports patch sharing via social media.  It's for sure an impressive addition to the field of web synths.</p>
+<p>The NV-1 is <a href="http://www.synthtopia.com/content/2015/09/19/free-web-midi-synthesizer-viktor-nv-1-now-available/comment-page-1/#comment-1017352">inspired</a> by <a href="http://beepjs.com">beep.js</a>, which is described as a toolkit for building synths in the browser.  For now, Chrome is the browser of choice for web synths as it's the only one that supports MIDI input from external controllers.</p>
+<p>According to <a href="http://webaudiodemos.appspot.com/namm/#/">these slides</a> by Google Chrome dev advocate <a href="https://twitter.com/cwilso">Chris Wilson</a>, there's skepticism from browser vendors that MIDI implementation is a worthwhile pursuit.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/web-midi-status.png"><img class="alignnone size-full wp-image-494" src="{{ site.baseurl }}/assets/archive/web-midi-status.png" alt="web-midi-status" width="700" height="486" /></a></p>
+<p>He goes on to say that there's a need for developers to demonstrate the importance of MIDI support in the browser.  Is it just a novelty or are there compelling music apps that can be built for the browser?  I'm not sure but there's some great hacking going on in the space now, and it seems like there's a lot of potential to hit on an interesting app that combines Web Audio and MIDI with the collaborative/distribution power of the Internet.</p>
+<p>Okay.  Next up is the beautifully executed <a href="http://www.igorski.nl/experiment/websid">WebSID</a> by <a href="http://www.igorski.nl/">Igor Zinken</a>.  It's a browser-based synth/sequencer that emulates the Commodore 64 <a href="https://www.c64-wiki.com/index.php/SID">SID sound chip</a>.</p>
+<p>[embed]https://youtu.be/EZtoDhig00U[/embed]</p>
+<p>And then there's the recently updated <a href="https://webx0x.com/beats/new#">WebX0X</a> by <a href="https://twitter.com/IrritantHQ">Irritant Creative</a>, perhaps the most interesting of the bunch.  What I like about WebX0X is that it's starting to explore collaborative features.  For example, it now supports the ability to save and share beats.  It might be interesting to save individual track sequences of a beat as well.  For example, WebX0X supports beats with 4 sequences: bass, snare, hi hat, and cowbell.  You could imagine loading in a cowbell sequence from another user's beat to add to your own bass, snare, and hi hat sequences.  Or maybe being able to load sequences from the community of shared beats using an algorithmic (or random) approach would make for interesting beat creation?  Automation would also be a great addition to the feature set as well.  I'm excited to see where Irritant takes this one.  For more background on WebX0X check out <a href="https://irritantcreative.ca/articles/x0x">Introducing WebX0X</a>.</p>
+<p>Finally, there's <a href="https://webaudiodemos.appspot.com/midi-synth/index.html">MIDI Synth</a> by Chris Wilson.  It was the first implementation I saw that enabled MIDI input from a peripheral controller.  Not the flashiest of the bunch but it gives a good demonstration of Web Audio and MIDI.  Source code is available at <a href="https://github.com/cwilso/midi-synth">github.com/cwilso/midi-synth</a>.</p>
+<p>And there you have it: 5 Web Audio- and/or MIDI-enabled instruments.  It's great to see developer interest in exploring Web Audio and MIDI APIs and it'd be great to see Web MIDI move from novelty to core browser feature.  We're not there yet but the experimentation is inspiring.</p>

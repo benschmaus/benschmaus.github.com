@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bitwig Korg nanoPAD2 Script How-to</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>Bitwig Korg nanoPAD2 Script How-to</h1>
+<p><b>07 Nov 2015</b></p>
+
+<p>I've been working on a Bitwig controller script for the nanoPAD2 and wrote about it in a previous post <a href="https://factotumo.com/2015/10/bitwig-controller-script-for-clip-launching-with-korg-nanopad2/">here</a>.  This post is a more detailed look at how the script works with Bitwig and the nanoPAD2.</p>
+<p>The script source code is at GitHub at <a href="https://github.com/benschmaus/nanopad2-bitwig">https://github.com/benschmaus/nanopad2-bitwig</a>.</p>
+<p>And the latest release can be found at <a href="https://github.com/benschmaus/nanopad2-bitwig/releases">https://github.com/benschmaus/nanopad2-bitwig/releases</a>.</p>
+<p>See a video demo of the script in action <a href="https://factotumo.com/2015/11/demo-for-nanopad2-script-for-bitwig/">here</a>.</p>
+<p>To install simply unzip the nanopad2-bitwig-1.0.0.zip file to Bitwig's controller scripts directory.</p>
+<p>Then in Bitwig, go to the controllers tab of the preferences menu and click "Add controller manually".</p>
+<p>You should see a menu item labeled "Factotumo" and under it choose "nanoPAD2 Clip Launcher".</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/nanopad2-clip-launcher-controller-menu.png"><img class="alignnone size-full wp-image-695" src="/assets/archive/nanopad2-clip-launcher-controller-menu.png" alt="nanopad2-clip-launcher-controller-menu" width="600" height="246" /></a></p>
+<p>By default the nanoPAD2 is in clip mode.  In this mode the pads on the nanoPAD2 start and stop clips in Bitwig Studio.  In scene 1 on the nanoPAD2 (yes, the term scene is a bit overloaded here) rows 1 and 2 control tracks 1 and 2 in Bitwig.  Using the scene button on the nanoPAD2 you can control tracks 1-8 in Bitwig.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-nanopad2-scene-buttons.png"><img class="alignnone size-full wp-image-698" src="/assets/archive/bitwig-nanopad2-scene-buttons.png" alt="bitwig-nanopad2-scene-buttons" width="1182" height="328" /></a></p>
+<p>Tapping in the lower left or right corners of the x/y pad will also enable clip mode.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-nanopad2-clipmode-padlayout.png"><img class="alignnone size-full wp-image-697" src="/assets/archive/bitwig-nanopad2-clipmode-padlayout.png" alt="bitwig-nanopad2-clipmode-padlayout" width="1182" height="328" /></a></p>
+<p>And here's the view in Bitwig of how the nanoPAD2 maps to the clip launcher grid.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-nanopad2-cliplaunching.png"><img class="alignnone size-full wp-image-700" src="/assets/archive/bitwig-nanopad2-cliplaunching.png" alt="bitwig-nanopad2-cliplaunching" width="1024" height="215" /></a></p>
+<p>Tapping in the upper right or left of the x/y pad enables scene mode in which the top row of scene 1 will trigger scenes (clips across all tracks) in Bitwig.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/korg-nanopad2-scene-mode-padlayout.png"><img class="alignnone size-full wp-image-701" src="/assets/archive/korg-nanopad2-scene-mode-padlayout.png" alt="korg-nanopad2-scene-mode-padlayout" width="1182" height="328" /></a></p>
+<p>When you move between scene and clip mode by tapping in the corners of the x/y pad Bitwig will show you a notification letting you know what mode you're in.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-nanopad2-scene-mode.png"><img class="alignnone size-full wp-image-703" src="/assets/archive/bitwig-nanopad2-scene-mode.png" alt="bitwig-nanopad2-scene-mode" width="400" height="287" /></a></p>
+<p>Here's how the nanoPAD2 maps to the clip launcher view in scene mode.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-nanopad2-scenelaunching.png"><img class="alignnone size-full wp-image-704" src="/assets/archive/bitwig-nanopad2-scenelaunching.png" alt="bitwig-nanopad2-scenelaunching" width="1024" height="331" /></a></p>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+---
+layout: post
+title: Use JACK to Record Web Audio Synths in Your DAW
+date: 2015-10-16 13:13:44.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- daws
+- open source
+- web audio
+- web midi
+tags:
+- jack
+meta:
+  _edit_last: '1'
+  _oembed_8f42a2841a09999197ce0d50e56dd169: "{{unknown}}"
+  _publicize_twitter_user: "@factotumo"
+  _thumbnail_id: '652'
+  _wpas_done_all: '1'
+  _wpas_mess: Use JACK to Record Web Audio Synths in Your DAW
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586389005;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:942;}i:1;a:1:{s:2:"id";i:488;}i:2;a:1:{s:2:"id";i:577;}}}}
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2015/10/use-jack-to-record-web-audio-synths-in-your-daw/"
+---
+<p>There are several interesting browser-based synths out there.  I wrote about some of them in my <a href="https://factotumo.com/2015/09/web-audiomidi-synth-roundup/">Web Audio/MIDI Synth Roundup</a> post awhile back, and one very good synth is the <a href="http://nicroto.github.io/viktor/">VIKTOR-NV1</a> by <a href="https://github.com/nicroto">Nikolay Tsenkov</a>.</p>
+<p>Wouldn't it be cool if you could take the audio output from a synth running in your browser and send it into your DAW for recording?  You can do just that using the <a href="http://jackaudio.org/">JACK</a> audio connection kit!</p>
+<p>What is JACK?  It's like <a href="https://audiob.us/">Audiobus</a> for desktop systems, but more flexible because there's no need for apps to natively support JACK.  JACK acts as a sort of proxy that can intercept all the audio on your machine letting you route it between applications arbitrarily.  For example, rather than using your computer's default audio output and input, you could change the default audio device to JACK, which would let you send audio from, say, your web browser, to your DAW.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/10/itunes-to-logic-using-jack.png"><img class="wp-image-653 size-full" src="{{ site.baseurl }}/assets/archive/itunes-to-logic-using-jack.png" alt="itunes-to-logic-using-jack" width="500" height="177" /></a> An example from the JACK OSX manual of using JACK to route audio from iTunes into Logic. Unfortunately this doesn't work on OS X under Yosemite due to a bug.</p>
+<p>In fact, the <a href="http://www.jackosx.com/">JACK OS X </a>manual uses an example of taking the audio output from iTunes and routing it into Logic.  Sound too good to be true?  Well, it is. Sort of.  If you're running on Linux (then you're probably already familiar with JACK!) this works great.  Unfortunately, there is a long-standing <a href="https://github.com/jackaudio/jack2/issues/84">known issue</a> with JACK under OS X Yosemite (and likely El Capitan) that prevents JACK from being used as the system's default audio interface, which rules out a lot of interesting use cases.</p>
+<p>From the GitHub issue report:</p>
+<blockquote><p><em>Jack OSX works on OS X 10.10 (so does the updated installer addressing the previous 64-bit issue), but the JackRouter system output device doesn't seem to work when selected under System Preferences -&gt; Sound -&gt; Output.</em></p></blockquote>
+<p>And from the JACK OS X <a href="https://groups.yahoo.com/neo/groups/jackosx/conversations/topics/4336">user group</a>:</p>
+<blockquote><p><em>Problem confirmed.</em></p>
+<p><em>I did some tests yesterday but could not understand the reason (did not see any error message in the console for instance). My guess is that "once again"... Apple has changed the way default audio devices have to interact with the system (more exactly with the "coreaudiod" system deamon….), probably related to some more constrained "sandbox" or "security" reasons...</em></p>
+<p><em>No idea how this can be solved, no idea when I'll find time to have a closer look…</em></p></blockquote>
+<p>Unfortunately, this makes JACK much less appealing for OS X users.  One user responded to the GitHub issue saying they were able to work around the problem using the <a href="https://rogueamoeba.com/freebies/soundflower/">Soundflower</a> kernel extension, which lets you set Soundflower as the default audio device on OS X and you can configure Soundflower to use JACK as an output.  I'm reluctant to install kernel extensions on my machine so I'm not going to give this a try personally.  Hopefully one of the JACK OS X devs or someone from the community will step in to resolve the issue and breathe some new life back into JACK for OS X.</p>
+<p>If you use Linux this approach will let you use browser-based instruments alongside your other virtual instruments, which might open up some new creative possibilities for the Web Audio and MIDI APIs.</p>
+<p>And let me know if you have other ideas for integrating browser instruments with desktop DAWs.  I'd love to hear about other approaches.</p>

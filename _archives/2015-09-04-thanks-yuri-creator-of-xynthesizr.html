@@ -1,0 +1,37 @@
+---
+layout: post
+title: Thanks, Yuri, Creator of Xynthesizr!
+date: 2015-09-04 16:40:34.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- ios music
+- midi
+- sequencer
+tags:
+- xynthesizr
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '307'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586542164;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:993;}i:1;a:1:{s:2:"id";i:1187;}i:2;a:1:{s:2:"id";i:222;}}}}
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2015/09/thanks-yuri-creator-of-xynthesizr/"
+---
+<p>I've been <a href="https://factotumo.com/2015/08/mimix-2-0-and-multi-app-jams-on-ios/">playing around</a> with <a href="https://itunes.apple.com/us/app/mimix-mixer-for-audiobus/id931404307?mt=8">MiMiX</a> for the past couple of weeks. In short, it lets you mix synths live via <a href="https://itunes.apple.com/us/app/audiobus/id558513570?mt=8">Audiobus</a> inputs.  (Have a look at the prolific <a href="http://www.musicappblog.com/mimix-review/">Music App Blog</a> for another perspective on MiMiX.)  One of my favorite apps to use with MiMiX is <a href="https://itunes.apple.com/us/app/xynthesizr-32-step-matrix/id720810459?mt=8">Xynthesizr</a>.  It's a step sequencer with a simple interface and powerful set of features. For example, you can configure it to send sections of the sequence grid to different MIDI channels allowing you to drive multiple synths, or you can create a sequence programmatically using a variety of algorithmic approaches.  And you can even mix and match pre-programmed steps with programmatic steps in a single sequence!</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/IMG_0012.png"><img class="wp-image-302 size-large" src="{{ site.baseurl }}/assets/archive/IMG_0012-1024x768.png" alt="" width="817" height="613" /></a> A 16 step sequence with the final 4 steps randomized.</p>
+<p>During my improv sessions with MiMiX, I had experienced a few crashes using Xynthesizr with <a href="https://itunes.apple.com/us/app/midibus/id648856167?mt=8">MidiBus</a> for clock sync and decided I'd try to contact their support team and report the problem. So I went to <a href="http://xynthesizr.com/" target="_blank">xynthesizr.com</a>, found an email address at the bottom of the page, and sent an email describing the issues I'd seen.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/xynth-state-save-crash.jpg"><img class="wp-image-310 size-large" src="{{ site.baseurl }}/assets/archive/xynth-state-save-crash-1024x768.jpg" alt="xynth-state-save-crash" width="817" height="613" /></a> Screenshot showing error when saving state in Audiobus.</p>
+<p>I was pleasantly surprised to get a note from Yuri Turov, the creator of Xynthesizr, a day later asking some follow up questions. He explained how to get crash logs from my iPad and asked me to send him logs from my device.</p>
+<p>I synced my iPad and a "find" command later I had a crash log to send. Yuri was able to use the log to find a bug that occurred when saving state in Audiobus with external clock source enabled.  Sweet!</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/08/crash-log-find.png"><img class="wp-image-287 size-large" src="{{ site.baseurl }}/assets/archive/crash-log-find-1024x678.png" alt="crash-log-find" width="817" height="541" /></a> The log that helped pinpoint the Xynthesizer bug where Audiobus state saving doesn't work when external clock input is enabled.</p>
+<p>I'm glad that the bug is getting fixed but the best part is that Yuri actually got back to me and was curious to learn more about my usage of his app. This is one of the best things about music on iOS right now.  It's awesome to be able to interact directly with app creators and get some firsthand insight into the dedication they bring to supporting their software.  I'm hopeful that the iOS platform will continue to provide opportunities for talented individuals and small companies to create apps that might not make it out of (or even <em>to</em>) the brainstorming phase at larger companies.  Don't get me wrong.  There is some great music tech coming out of large companies, but it's really encouraging to see innovative and high quality apps coming from small outfits, too.</p>
+<p>Thanks to Yuri and all the other talented independent developers out there following their visions and pushing music creation on iOS forward.</p>

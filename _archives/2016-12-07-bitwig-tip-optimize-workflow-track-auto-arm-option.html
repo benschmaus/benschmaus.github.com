@@ -1,0 +1,44 @@
+---
+layout: post
+title: 'Bitwig Tip: Optimize Workflow with Track Auto-arm Option'
+date: 2016-12-07 21:02:14.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- controller
+- daws
+- midi
+- sequencer
+tags:
+- arturia
+- bitwig
+meta:
+  _edit_last: '1'
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586606729;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:371;}i:1;a:1:{s:2:"id";i:314;}i:2;a:1:{s:2:"id";i:1023;}}}}
+  _thumbnail_id: '1567'
+  _aioseop_keywords: bitwig, midi, arturia, beatstep pro, controller
+  _aioseop_description: Disabling auto-arm allows you to move from track to track
+    e.g., to adjust parameters or macros, without the previously selected track being
+    disarmed.
+  _aioseop_title: 'Bitwig Tip: Optimize Workflow with Track Auto-arm'
+  _wpas_mess: "@Bitwig Tip: Optimize Your Workflow with Track Auto-arm Option"
+  _wpas_done_all: '1'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2016/12/bitwig-tip-optimize-workflow-track-auto-arm-option/"
+---
+<p>When you're using a single MIDI controller to record multiple instrument tracks in Bitwig you often only want a single instrument track to be armed for recording at a time.  But if you're using Bitwig in a performance context with a multichannel hardware step sequencer, like Arturia's Beatstep Pro (you can get a Bitwig script for that <a href="https://factotumo.com/2016/12/new-bitwig-script-for-arturia-beatstep-pro/">here</a>), you need to be able to send MIDI data to instruments on multiple tracks at the same time and they all need to be record enabled so you can hear them.</p>
+<p>Under the "Options" menu, the "Auto-arm Selected Instrument Tracks" option can be toggled, resulting in a smoother workflow for these different usage contexts.  For a recording context, it's handy to have this option enabled.  When you switch from one instrument track to another, the previous track is unarmed and the newly selected track is armed.</p>
+<p>In a performance context, disabling this option allows you to move from track to track, for example to adjust volume, parameters, or macros, without the previously selected track being disarmed.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2016/12/selected-track-auto-arm-smaller.png"><img class="wp-image-1567 size-full" src="{{ site.baseurl }}/assets/archive/selected-track-auto-arm-smaller.png" width="550" height="702" /></a> Enabling the track auto-arm option works well for recording contexts. Disabling makes for smoother workflows in performance contexts involving hardware sequencers like the Beatstep Pro.</p>
+<p>&nbsp;</p>
+<p>This is a really easy change to make, but I've found it makes a big improvement to my workflow,  In particular, when I'm improvising and experimenting with my Beatstep Pro, being able to disable track auto-arm is super handy.</p>

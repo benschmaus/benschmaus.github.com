@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web MIDI Access, Sysex, and SSL</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>Web MIDI Access, Sysex, and SSL</h1>
+<p><b>14 Mar 2017</b></p>
+
+<p>I've been working with <a href="https://meeblip.com/">James Grahame</a> and <a href="http://cdm.link/">Peter Kirn</a> on a Web MIDI project for <a href="https://meeblip.com/">meeblip.com</a> over the last month or so.  (More on that in an upcoming post.)</p>
+<p>As part of that work I've learned that MIDI access behaves differently in Chrome and Opera (the only two browsers that support Web MIDI to date to my knowledge), and behavior also varies depending on whether HTTP or HTTPS is used to serve your Web MIDI app.</p>
+<p>In a nutshell, if you want Web MIDI to work in Opera then you need to serve your page over HTTPS.  Web MIDI simply isn't available in Opera under HTTP.  In Chrome, as long as you don't ask for sysex privileges when requesting MIDI access, you're good with HTTP; if you need sysex then you're going to need to serve your page over HTTPS.</p>
+<p>The following table summarizes the behavior of different scenarios across both browsers.</p>
+
+<table border="1" id="tablepress-1" class="tablepress tablepress-id-1 dataTable no-footer" role="grid">
+<thead>
+<tr class="row-1 odd" role="row"><th class="column-1 sorting_disabled" rowspan="1" colspan="1" style="width: 73px;">&nbsp;</th><th class="column-2 sorting_disabled" rowspan="1" colspan="1" style="width: 177px;">HTTP w/o Sysex</th><th class="column-3 sorting_disabled" rowspan="1" colspan="1" style="width: 168px;">HTTP with Sysex</th><th class="column-4 sorting_disabled" rowspan="1" colspan="1" style="width: 177px;">HTTPS w/o Sysex</th><th class="column-5 sorting_disabled" rowspan="1" colspan="1" style="width: 160px;">HTTPS w/o Sysx</th></tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even" role="row">
+  <td class="column-1">Chrome</td><td class="column-2">Granted, no prompt</td><td class="column-3">Denied, no prompt</td><td class="column-4">Granted, no prompt</td><td class="column-5">Prompt user</td>
+</tr><tr class="row-3 odd" role="row">
+  <td class="column-1">Opera</td><td class="column-2">Denied, no prompt</td><td class="column-3">Denied, no prompt</td><td class="column-4">Prompt user</td><td class="column-5">Prompt user</td>
+</tr></tbody>
+</table>
+
+<p>Here's what the Web MIDI spec has to say about <a href="https://webaudio.github.io/web-midi-api/#dom-navigator-requestmidiaccess">requesting MIDI access</a>:</p>
+<blockquote><p>Requesting MIDI access <em class="rfc2119" title="SHOULD">should</em> prompt the user for access to MIDI devices, particularly if system exclusive access is requested. In some scenarios, this permission may have already been implicitly or explicitly granted, in which case this prompt may not appear. If the user gives express permission or the call is otherwise approved, the vended Promise is resolved. The underlying system may choose to allow the user to select specific MIDI interfaces to expose to this API (i.e. pick and choose interfaces on an individual basis), although this is not required. The system may also choose to prompt (or not) based on whether system exclusive support is requested, as system exclusive has greater privacy and security implications.</p>
+<p>If the user declines or the call is denied for any other reason, the Promise is rejected with a DOMException parameter.</p></blockquote>
+<p>This doesn't give any guidance about HTTP vs HTTPS though step 3 of the midi access algorithm outlined in the spec states, "Optionally, e.g. based on a previously-established user preference, for security reasons, or due to platform limitations, jump to the step labeled <em>failure</em> below."  Presumably Opera rejects MIDI access over HTTP for security reasons though it would be nice if it matched Chrome's behavior and allowed MIDI access over HTTP provided the page doesn't ask for sysex.  Maybe they'll change that.</p>
+<p>To demonstrate the behaviors outlined in the table, I've put together a couple of CodePens that ask for MIDI access with and without sysex.  Fortunately you can access CodePen via HTTP or HTTPS so it serves as a good test bed for the combinations we need.  You can try them out yourself.</p>
+<ul>
+<li>HTTP with Sysex: <a href="http://codepen.io/bschmaus/pen/bqrMOV">http://codepen.io/bschmaus/pen/bqrMOV</a></li>
+<li>HTTP w/o Sysex: <a href="http://codepen.io/bschmaus/pen/WpEJYw">http://codepen.io/bschmaus/pen/WpEJYw</a></li>
+<li>HTTPS with Sysex: <a href="https://codepen.io/bschmaus/pen/bqrMOV">https://codepen.io/bschmaus/pen/bqrMOV</a></li>
+<li>HTTPS w/o Sysex: <a href="https://codepen.io/bschmaus/pen/WpEJYw">https://codepen.io/bschmaus/pen/WpEJYw</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>Here's what you'll see in the CodePens when access is denied:</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-14-at-8.33.22-PM.png"><img class="size-large wp-image-1671 aligncenter" src="/assets/archive/Screen-Shot-2017-03-14-at-8.33.22-PM-1024x142.png" alt="" width="817" height="113" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Here's what the CodePen output looks like when access is granted:</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-15-at-7.18.47-AM.png"><img class="size-large wp-image-1689 aligncenter" src="/assets/archive/Screen-Shot-2017-03-15-at-7.18.47-AM-1024x136.png" alt="" width="817" height="109" /></a></p>
+<p>&nbsp;</p>
+<p>Chrome's prompt (you'll see it if you ask for sysex over HTTPS) looks like this:</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-14-at-8.10.02-PM-1.png"><img class="size-full wp-image-1672 aligncenter" src="/assets/archive/Screen-Shot-2017-03-14-at-8.10.02-PM-1.png" alt="" width="800" height="303" /></a></p>
+<p>&nbsp;</p>
+<p>And here's what Opera's prompt looks like (you'll see it regardless of sysex over HTTPS; access blocked over HTTP):</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-14-at-8.13.50-PM.png"><img class="size-large wp-image-1670 aligncenter" src="/assets/archive/Screen-Shot-2017-03-14-at-8.13.50-PM-1024x289.png" alt="" width="817" height="231" /></a></p>
+<p>&nbsp;</p>
+<p>If you get different behavior than outlined in the table in the CodePens then pull up your browser settings and type "midi" into the search box.  Then click the "Manage Exceptions" button where you'll see a dialog like follows.  If you've previously allowed/blocked access for CodePen then you'll need to remove the record in the dialog (mouseover and click the "x") and re-run the CodePen.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-15-at-8.55.30-AM.png"><img class="size-large wp-image-1692 aligncenter" src="/assets/archive/Screen-Shot-2017-03-15-at-8.55.30-AM-1024x807.png" alt="" width="817" height="644" /></a></p>
+<p>&nbsp;</p>
+<p>So...if you're developing a Web MIDI app and want to support both Chrome and Opera then you need to use HTTPS.  For apps that don't need sysex, as long as you're good with limiting yourself to Chrome, then you're fine serving your app up via HTTP.</p>
+<p>Let me know if your experience has been different than mine, and Opera devs, it'd be great if you could update your Web MIDI implementation to allow MIDI access over HTTP without sysex.</p>
+
+    </div>
+  </body>
+</html>

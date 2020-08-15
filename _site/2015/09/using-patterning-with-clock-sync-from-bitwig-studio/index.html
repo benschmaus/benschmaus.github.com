@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Using Patterning with Clock Sync from Bitwig Studio</title>
+    <link rel="stylesheet" href="/assets/css/s.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53688025-2');
+</script>
+-->
+  </head>
+  <body>
+
+    <!--
+<a href="/"><img src="/assets/img/chrome/factotumo-nav.png" width="175" height="50" /></a>
+<nav>
+  
+</nav>
+-->
+
+
+<div class="nav">
+<nav>
+<a href="/">Home</a>
+</nav>
+</div>
+
+
+
+
+    <div class="content">
+    <h1>Using Patterning with Clock Sync from Bitwig Studio</h1>
+<p><b>13 Sep 2015</b></p>
+
+<p>[<em><strong>Update, 9/14:</strong> clarify that iConnect interface is not required to route audio between an iPad and computer.  Either <a href="http://musicioapp.com/">MusicIO</a> or <a href="http://midimux.net/">Audiomux</a> can also be used for this.</em>]</p>
+<p><a href="https://itunes.apple.com/us/app/patterning-drum-machine/id976690555?mt=8">Patterning</a> is an awesome drum sequencer for iOS by <a href="http://www.olympianoiseco.com/blog/patterning-release-follow-up/">Olympia Noise Co</a>.  Sequences are programmed using a unique interface built around concentric circles.  You can read reviews on <a href="http://audionewsroom.net/2015/08/patterning-for-ipad-review-circular-inspiration.html">ANR</a> or <a href="http://www.musicappblog.com/patterning-review/">Music App Blog</a> and <a href="http://www.factmag.com/2015/08/23/patterning-drum-machine-app-ipad/">FACT Mag</a> has a nice interview with Ben Kamen, who created Patterning (and the other apps in the Olympia Noice Co. catalog).</p>
+<p>This post isn't a review; it's about integrating Patterning with your desktop system and using your DAW to control tempo in Patterning.  I'm using <a href="http://www.bitwig.com/en/bitwig-studio.html">Bitwig Studio</a>, but the steps would be similar for other DAWs.</p>
+<p>Here's the core of my setup:</p>
+<ul>
+<li>MacBook Pro</li>
+<li>iPad</li>
+<li><a href="http://www.iconnectivity.com/products/midi/iConnectMIDI4plus">iConnectMIDI4+</a> - MIDI interface with audio passthrough between iPad and laptop (Mac and PC)</li>
+</ul>
+<p>Note that you don't need the iConnect in order to do this.  As long as you can get MIDI between your computer and your iPad (e.g., using <a href="https://itunes.apple.com/us/app/music-io-audio-midi-over-usb/id966003016?mt=8">MusicIO</a> or <a href="https://itunes.apple.com/us/app/midimux/id963133945?mt=8">MIDIMux</a>) you can sync Patterning with your computer.  The iConnect allows you to connect additional MIDI devices and enables you to pass audio back and forth between your computer and your iPad.  MusicIO and the MIDIMux sister app, <a href="https://itunes.apple.com/us/app/audiomux/id966554837?mt=8">Audiomux</a>, will also let you route audio between a computer and iPad with nothing more than the standard lightning (or 30-pin) connector cable.  For example, you might want to send a guitar signal from your computer, run it through <a href="http://www.ikmultimedia.com/products/amplitubeios/">AmpliTube</a> running on your iPad and send the processed signal back into your computer.  The iConnect gives you more overall flexibility but these other apps will do the trick, too, and they're a fraction of the cost (&lt; $10 vs $199 for iConnectMIDI4+).  I use MusicIO when I'm working with just my iPad and MacBook Pro and it works great.</p>
+<p>Alright, let's begin.</p>
+<p><strong>Step 1: Configure Bitwig to Send Clock Data to Patterning</strong></p>
+<p>To send clock data from Bitwig open up preferences and click add controller manually.  From there you select the generic controllers option and choose MIDI Clock Transmitter from the list.  I'm using the iConnectMIDI4+ and I've got my iPad connected to the first USB port (which keeps my iPad fully powered) on the iConnect interface.  So I want Bitwig to send clock data there.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/bitwig-clock-transmit-to-iconnect-usb1.png"><img class="alignnone size-full wp-image-375" src="/assets/archive/bitwig-clock-transmit-to-iconnect-usb1.png" alt="bitwig-clock-transmit-to-iconnect-usb1" width="523" height="578" /></a></p>
+<p><strong>Step 2: Configure Patterning to Receive Clock Data from Bitwig Studio</strong></p>
+<p>From the file menu in Patterning, pull up the MIDI config screen and under the MIDI clock heading select receive.  Then tap the small arrow to the right of the "send", which will allow you to select an input source from which to receive clock data.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/set-patterning-to-receive.png"><img class="alignnone size-large wp-image-384" src="/assets/archive/set-patterning-to-receive-1024x820.png" alt="set-patterning-to-receive" width="817" height="654" /></a></p>
+<p>I've got my MacBook Pro connected to the third USB port on the iConnect interface so that's what I select.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/patterning-select-clock-input-source.png"><img class="alignnone size-large wp-image-385" src="/assets/archive/patterning-select-clock-input-source-1024x820.png" alt="patterning-select-clock-input-source" width="817" height="654" /></a></p>
+<p>At this point, Patterning will sync from Bitwig Studio enabling you to trigger clips in Bitwig and play along in time in Patterning.  As you can see in the screenshot below, Patterning indicates that MIDI clock is enabled and you can see the tempo is 126 BPM, which corresponds to the tempo in Bitwig.  If the tempo is further adjusted in Bitwig, Patterning will automatically update the tempo display on this screen and you'll hear the sequence adjust to the timing changes accordingly.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/patterning-midi-clock-enabled.png"><img class="alignnone size-large wp-image-387" src="/assets/archive/patterning-midi-clock-enabled-1024x820.png" alt="patterning-midi-clock-enabled" width="817" height="654" /></a></p>
+<p>And here's the tempo in Bitwig Studio, which is controlling Patterning.</p>
+<p>That's all there is to it!</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/bitwig-tempo.png"><img class="alignnone size-full wp-image-382" src="/assets/archive/bitwig-tempo.png" alt="bitwig-tempo" width="523" height="330" /></a></p>
+<p>This setup has been working great so far though there are a few seconds of jitter in Patterning when you first start playing in Bitwig.  Which is to say, it takes Patterning a second or two to get in sync with Bitwig.  I'm not sure if this is an issue with the clock data being sent from Bitwig or how Patterning is processing the incoming data but things smooth out fairly quickly.</p>
+<p>My workflow thus far is to set up a track in Bitwig that gets its input from the iConnectMIDI4+ (i.e., my iPad).  I record clips live on that track and then move the clips off to "bounce" tracks.  I usually try variations with different kits so I end up with a few tracks (1 per kit) with a bunch of clips from Patterning.  This is nice because I can then just mute the Patterning live input track and improv with the various clips on the bounce tracks.  There are other workflow approaches but this one's working for me for now.</p>
+<p>I'm curious to know how others are a) using Patterning, b) integrating iOS with their desktop systems, and c) approaching workflow for iOS audio in Bitwig Studio.</p>
+
+    </div>
+  </body>
+</html>

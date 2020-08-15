@@ -1,0 +1,46 @@
+---
+layout: post
+title: Arturia BeatStep Pro Script Updated for Bitwig Studio 2.0
+date: 2017-04-18 07:13:38.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- controller
+- daws
+- midi
+- open source
+tags:
+- arturia
+- beatstep pro
+- bitwig
+meta:
+  _edit_last: '1'
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586566287;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1023;}i:1;a:1:{s:2:"id";i:1538;}i:2;a:1:{s:2:"id";i:371;}}}}
+  _thumbnail_id: '1720'
+  _aioseop_keywords: bitwig, midi, arturia, beatstep pro
+  _aioseop_description: I just released an updated version of my BeatStep Pro controller
+    script for Bitwig Studio 2.0.
+  _aioseop_title: Arturia BeatStep Pro Script Updated for Bitwig 2
+  _wpas_mess: Arturia BeatStep Pro Script Updated for @Bitwig Studio 2.0
+  _wpas_done_all: '1'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2017/04/arturia-beatstep-pro-script-updated-for-bitwig-studio-2-0/"
+---
+<p>I just released an updated version of my BeatStep Pro controller script for Bitwig Studio 2.0.</p>
+<p>The release is available at <a href="https://github.com/benschmaus/bitwig-beatsteppro/releases">https://github.com/benschmaus/bitwig-beatsteppro/releases</a>, and it has the same functionality as described at <a href="https://factotumo.com/2017/01/bitwig-bsp-script-update-enhanced-cursor-device-control/">https://factotumo.com/2017/01/bitwig-bsp-script-update-enhanced-cursor-device-control/</a>.</p>
+<p>In a nutshell you can use each of the BSP's sequencers independently as MIDI inputs for tracks, control cursor device params/macros, and navigate tracks, devices, and presets.</p>
+<p>I had to comment out the call to <code>host.addDeviceNameBasedDiscoveryPair</code> because it prevented the script from loading properly.  So until I've worked out the issue, the controller needs to be added manually rather than being auto-detected.  Otherwise all functionality is tested and should be good to go.</p>
+<p>The only other change is that in Bitwig v2 clock sync is configured under a new menu called "synchronization", which can be found under the preferences dialog.  To send MIDI clock data to your BSP simply select the MIDI output your BSP is connected to and toggle the "clock" button to the on state.  It should look like the following screenshot.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2017/04/bws-2.0-controller-sync.png"><img class="size-large wp-image-1713 aligncenter" src="{{ site.baseurl }}/assets/archive/bws-2.0-controller-sync-1024x569.png" alt="" width="817" height="454" /></a></p>
+<p>&nbsp;</p>
+<p>For more detailed info see the project <a href="https://github.com/benschmaus/bitwig-beatsteppro">README</a>.</p>

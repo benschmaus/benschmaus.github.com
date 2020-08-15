@@ -1,0 +1,59 @@
+---
+layout: post
+title: Helm v0.5 Beta Released - New Patches, Fixes and Features
+date: 2015-09-10 20:44:30.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- code
+- instruments
+- open source
+- plugins
+- synths
+- vst
+tags:
+- bitwig
+- helm
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '360'
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586605564;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:883;}i:1;a:1:{s:2:"id";i:722;}i:2;a:1:{s:2:"id";i:942;}}}}
+  _wpas_done_all: '1'
+  _wpas_mess: Helm v0.5 Beta Released - New Patches, Fixes and Features
+  _wpas_skip_12359968: '1'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2015/09/helm-v0-5-beta-released-new-patches-fixes-and-features/"
+---
+<p>A new version of the excellent free synth, <a href="http://tytel.org/helm/">Helm</a>, by <a href="http://tytel.org/">Matt Tytel</a> was just released.  The release follows a contribution of Helm patches to <a href="https://musical-artifacts.com/artifacts/96">Musical Artifacts</a>, which were subsequently added to the <a href="https://github.com/mtytel/helm/tree/master/patches">Helm source</a> directly.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/09/helm-v0.5-patch-browser.png"><img class="wp-image-361 size-large" src="{{ site.baseurl }}/assets/archive/helm-v0.5-patch-browser-1024x715.png" alt="helm-v0.5-patch-browser" width="817" height="570" /></a> Helm v0.5 beta ships with a new patch browser along with patches contributed by <a href="https://twitter.com/CrisOwlAlvarez">Cris Owl Alvarez</a>.</p>
+<p>Helm runs standalone and as a plugin (LV2/VST/AU/AAX) so you can run it from any DAW on Windows, Linux or Mac.  And if you're interested in software synth development you can modify and build directly from the source code at <a href="https://github.com/mtytel/helm">GitHub</a>.</p>
+<p>Helm looks beautiful (it follows a Google design concept called <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a>) and it's style of modulation configuration is <a href="http://tytel.org/blog/2015/04/23/long-update/">inspired</a> by <a href="http://bitwig.com">Bitwig Studio</a>.  Along with u-he's <a href="https://www.u-he.com/cms/tyrelln6">TyrellN6</a>, Helm is one of the best free synths out there.  Check it out and consider donating or picking up some <a href="http://tytel.org/blog/2015/06/01/stickers/">stickers</a> if you're so moved.  For more, take a look at Matt's <a href="http://tytel.org/blog/">blog</a>.  He's keeping a log of the development of Helm and it's really interesting to read about its evolution over time.  For the origin story, see the <a href="http://tytel.org/blog/2015/01/17/twytch-intro/">first post</a> on his blog where you'll discover that Helm began life as a synthesizer named Twytch!</p>
+<p>Full list of updates in v0.5 below or see also the <a href="http://us10.campaign-archive2.com/?u=51f692a7bd89f1732f991cdf1&amp;id=38d6be3c85">release notes</a>.</p>
+<div>
+<ul>
+<li>New patch browser!</li>
+<li>Added a bunch of patches submitted by Cris Owl Alvarez</li>
+<li>Finally fixed AAX plugin on OSX ( Windows AAX still broken :( )</li>
+<li>Fixed latency when playing monophonically with legato off</li>
+<li>Portamento now always uses the last note pressed to slide from</li>
+<li>Saving dialog shows up over synth now</li>
+<li>Saving now allows to specify author</li>
+<li>Fixed freeze when quickly loading patches</li>
+<li>Fixed audio breaking bug when first note is played with formant filter on</li>
+<li>JACK inputs are now labeled "Helm"</li>
+<li>Tooltip shows better names for controls</li>
+<li>Fixed setting new parameters with old patches</li>
+<li>Added configuration file where users can customize the keyboard layout</li>
+<li>Added --version [-v] flag for GNU/Linux</li>
+<li>Fixed clipped text on GNU/Linux</li>
+</ul>
+</div>

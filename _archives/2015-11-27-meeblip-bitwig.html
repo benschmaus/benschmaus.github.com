@@ -1,0 +1,81 @@
+---
+layout: post
+title: Control and Record MeeBlip anode in Bitwig Studio
+date: 2015-11-27 17:20:08.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- daws
+- midi
+- synths
+tags:
+- bitwig
+- meeblip
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '738'
+  prompt_no_email: ''
+  prompt_no_featured_image: ''
+  prompt_excerpt_only: ''
+  _publicize_twitter_user: "@factotumo"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1586071534;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:371;}i:1;a:1:{s:2:"id";i:942;}i:2;a:1:{s:2:"id";i:1712;}}}}
+  prompt_recipient_ids: a:1:{i:0;i:1;}
+  _wpas_done_all: '1'
+  _wpas_mess: More details on controlling @MeeBlip anode using @Bitwig hardware instrument
+    device.
+  prompt_sent_ids: a:1:{i:0;i:1;}
+  _aioseop_keywords: bitwig, meeblip, midi
+  _aioseop_description: How to use the hardware instrument device in Bitwig Studio
+    to control and record a hardware synthesizer, like the MeeBlip anode.
+  _aioseop_title: Control and Record MeeBlip anode in Bitwig
+  _wpas_skip_12359968: '1'
+  _oembed_d4709593276950c83b02a75de8f86eaa: <iframe title="Control and Record MeeBlip
+    anode in Bitwig" width="817" height="460" src="https://www.youtube.com/embed/PleUCy7KSo4?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  _oembed_time_d4709593276950c83b02a75de8f86eaa: '1586620215'
+author:
+  login: benschmaus
+  email: benjamin.schmaus@gmail.com
+  display_name: Ben
+  first_name: ''
+  last_name: ''
+permalink: "/2015/11/meeblip-bitwig/"
+---
+<p>This post describes how to use the hardware instrument device in <a href="http://bitwig.com">Bitwig Studio</a> to control and record a hardware synthesizer, like the <a href="http://meeblip.com/">MeeBlip anode</a>.</p>
+<p>Let's dive right in with a <a href="https://youtu.be/ayepOF_iCso">video</a> demonstrating usage of Bitwig's hardware instrument device with the anode.</p>
+
+<iframe title="Control and Record MeeBlip
+    anode in Bitwig" width="817" height="460" src="https://www.youtube.com/embed/PleUCy7KSo4?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+<p>Here's a quick summary of the gear used.</p>
+<ul>
+<li><a href="http://www.keithmcmillen.com/products/k-board/">KMI K-Board</a></li>
+<li><a href="http://www.iconnectivity.com/products/midi/iConnectMIDI4plus">iConnectMIDI4+</a> MIDI interface</li>
+<li><a href="http://meeblip.com/collections/our-products/products/meeblip-anode-synth">MeeBlip anode</a> synth</li>
+<li><a href="http://www.ikmultimedia.com/products/irigpro/">iRig Pro</a> audio interface</li>
+<li><a href="http://www.bitwig.com/en/bitwig-studio.html">Bitwig Studio</a> DAW</li>
+</ul>
+<p>And below are more details about the setup.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/kmi-kboard-border.jpg"><img class="wp-image-741 size-full" src="{{ site.baseurl }}/assets/archive/kmi-kboard-border.jpg" alt="kmi-kboard-border" width="640" height="355" /></a> A KMI K-Board is connected to an <a href="http://www.iconnectivity.com/products/midi/iConnectMIDI4plus">iConnectMIDI4+</a> MIDI interface via USB.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/iconnect-to-meeblip-border.jpg"><img class="wp-image-740 size-full" src="{{ site.baseurl }}/assets/archive/iconnect-to-meeblip-border.jpg" alt="iconnect-to-meeblip-border" width="640" height="480" /></a> The MIDI DIN 1 output of the iConnectMIDI4+ is connected to the MIDI DIN input of the MeeBlip anode.</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/meeblip-border.jpg"><img class="wp-image-742 size-full" src="{{ site.baseurl }}/assets/archive/meeblip-border.jpg" alt="meeblip-border" width="609" height="640" /></a> MIDI input on the anode comes from the MIDI DIN 1 output of the iConnectMIDI4+ (see previous photo). The audio out of the anode is connected to an <a href="http://www.ikmultimedia.com/products/irigpro/">iRig Pro</a> audio interface, which you can see sitting behind the anode. Note the use of a 9v battery to power the anode. Very convenient!</p>
+<p>&nbsp;</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-hardware-instrument-border.png"><img class="wp-image-750 size-full" src="{{ site.baseurl }}/assets/archive/bitwig-hardware-instrument-border.png" alt="bitwig-hardware-instrument-border" width="180" height="229" /></a> Bitwig's hardware instrument device</p>
+<p>&nbsp;</p>
+<p>We use the hardware instrument device on an instrument track in Bitwig. For MIDI out, the MIDI DIN 1 port of the iConnectMIDI4+ is selected. Audio input comes from the iRig Pro, which is receiving audio from the anode.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-meeblip-border.png"><img class="wp-image-751 size-medium" src="{{ site.baseurl }}/assets/archive/bitwig-meeblip-border-300x132.png" alt="bitwig-meeblip-border" width="300" height="132" /></a> An instrument (MIDI) and audio track in Bitwig</p>
+<p>&nbsp;</p>
+<p>The top track is an instrument track that uses the hardware instrument device to control the anode.  The second track is an audio track which is used to record the audio coming out of the top track.</p>
+<p><a href="https://factotumo.com/wp-content/uploads/2015/11/bitwig-input-for-audio-track-border.png"><img class="wp-image-752 size-full" src="{{ site.baseurl }}/assets/archive/bitwig-input-for-audio-track-border.png" alt="bitwig-input-for-audio-track-border" width="166" height="75" /></a> Track I/O settings in Bitwig</p>
+<p>&nbsp;</p>
+<p>The audio track gets input from the instrument track that's controlling the anode.</p>
+<p>And with that, you should be able to use Bitwig's hardware instrument device to control your outboard synths with MIDI from Bitwig.  You can then play your MIDI track, manipulate knobs on your synth if desired, and record the audio onto a new track.</p>
+<p>&nbsp;</p>
