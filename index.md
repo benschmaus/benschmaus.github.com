@@ -12,7 +12,7 @@ I enjoy spending time with creative people.
 
 You can find me in various places on the Internet. For example, [Twitter](https://twitter.com/schmaus) and [LinkedIn](http://www.linkedin.com/in/bschmaus).
 
-## Some things that may be of interest
+## Music Projects
 
 I wrote a [console app](/web-midi-console) for viewing MIDI data in a web browser. It's helpful for testing and debugging MIDI gear.
 
