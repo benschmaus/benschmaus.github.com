@@ -10,6 +10,6 @@ nav a { margin-right: 8px; }
 
 .current { font-weight: bold; }
 
-.content { padding: 8px; }
+.content { padding-left: 8px; width: 80%; }
 
 /*# sourceMappingURL=s.css.map */

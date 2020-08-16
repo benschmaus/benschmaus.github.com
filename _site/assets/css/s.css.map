@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";",
-		"body {\n  padding: 0;\n  margin: 0;\n  background-color: #fff;\n  font-family: Optima,Candara;\n}\n.nav {\n  background-color: #fff;\n  padding: 8px;\n}\n.nav img {\n  float: left;\n}\n\nnav {\n  padding-top: 14px;\n  margin-right: 10px;\n}\nnav a {\n  margin-right: 8px\n}\n.current {\n  font-weight: bold;\n}\n\n.content {\n  padding: 8px\n}\n"
+		"body {\n  padding: 0;\n  margin: 0;\n  background-color: #fff;\n  font-family: Optima,Candara;\n}\n.nav {\n  background-color: #fff;\n  padding: 8px;\n}\n.nav img {\n  float: left;\n}\n\nnav {\n  padding-top: 14px;\n  margin-right: 10px;\n}\nnav a {\n  margin-right: 8px\n}\n.current {\n  font-weight: bold;\n}\n\n.content {\n  padding-left: 8px;\n  width:80%\n}\n"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,IAAI,CAAC,EACH,OAAO,EAAE,CAAC,EACV,MAAM,EAAE,CAAC,EACT,gBAAgB,EAAE,IAAI,EACtB,WAAW,EAAE,cAAc,GAC5B;;AACD,AAAA,IAAI,CAAC,EACH,gBAAgB,EAAE,IAAI,EACtB,OAAO,EAAE,GAAG,GACb;;AACD,AAAA,IAAI,CAAC,GAAG,CAAC,EACP,KAAK,EAAE,IAAI,GACZ;;AAED,AAAA,GAAG,CAAC,EACF,WAAW,EAAE,IAAI,EACjB,YAAY,EAAE,IAAI,GACnB;;AACD,AAAA,GAAG,CAAC,CAAC,CAAC,EACJ,YAAY,EAAE,GAChB,GAAC;;AACD,AAAA,QAAQ,CAAC,EACP,WAAW,EAAE,IAAI,GAClB;;AAED,AAAA,QAAQ,CAAC,EACP,OAAO,EAAE,GACX,GAAC"
+	"mappings": "ACAA,AAAA,IAAI,CAAC,EACH,OAAO,EAAE,CAAC,EACV,MAAM,EAAE,CAAC,EACT,gBAAgB,EAAE,IAAI,EACtB,WAAW,EAAE,cAAc,GAC5B;;AACD,AAAA,IAAI,CAAC,EACH,gBAAgB,EAAE,IAAI,EACtB,OAAO,EAAE,GAAG,GACb;;AACD,AAAA,IAAI,CAAC,GAAG,CAAC,EACP,KAAK,EAAE,IAAI,GACZ;;AAED,AAAA,GAAG,CAAC,EACF,WAAW,EAAE,IAAI,EACjB,YAAY,EAAE,IAAI,GACnB;;AACD,AAAA,GAAG,CAAC,CAAC,CAAC,EACJ,YAAY,EAAE,GAChB,GAAC;;AACD,AAAA,QAAQ,CAAC,EACP,WAAW,EAAE,IAAI,GAClB;;AAED,AAAA,QAAQ,CAAC,EACP,YAAY,EAAE,GAAG,EACjB,KAAK,EAAC,GACR,GAAC"
 }
