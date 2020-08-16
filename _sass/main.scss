@@ -1,9 +1,15 @@
 
+/*
+footer set up reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers
+*/
 body {
   padding: 0;
   margin: 0;
-  background-color: #fff;
   font-family: Optima;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #efefef;
 }
 
 h1 {
@@ -15,13 +21,15 @@ h2 {
   padding: 0;
 }
 
-
 nav {
   font-family: Optima;
-  background-color: #fff;
-  padding-top: 20px;
+  background-color: #efefef;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 8px;
-  padding-bottom: 20px;
+  border-top: 10px solid #0099ff;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 16px;
 }
 
 nav a {
@@ -37,18 +45,18 @@ nav a {
   margin-bottom: 20px;
 }
 
-.footer {
+footer {
   width: 100%;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+  border-bottom: 10px solid #339933;
+  /*border-top: 1px solid #aaa;
   padding-bottom: 12px;
-  padding-top: 10px;
-  position: absolute;
-
+  padding-top: 10px;*/
 }
 
 .logo {
   display: block;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
+  width: 125px;
+  height: 36px
 }
