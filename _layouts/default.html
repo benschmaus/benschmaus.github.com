@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/purecss-base-min-2.0.3.css">
+    <link rel="stylesheet" href="/assets/css/purecss-grids-min-2.0.3.css">
+    <link rel="stylesheet" href="/assets/css/purecss-grids-responsive-min-2.0.3.css">
     <link rel="stylesheet" href="/assets/css/s.css">
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!--
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53688025-2"></script>
@@ -21,8 +24,17 @@
 
     {% include nav.html %}
 
+    <div class="pure-g">
+    <div class="pure-u-1-1">
+    
     <div class="content">
     {{ content }}
     </div>
+    
+    </div>
+    </div>
+
+    {% include footer.html %}
+
   </body>
 </html>

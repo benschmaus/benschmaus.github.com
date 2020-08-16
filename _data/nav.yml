@@ -1,8 +1,6 @@
-#- name: Home
-#  link: /
-#- name: About
-#  link: /about
-#- name: Blog
-#  link: /blog
-#- name: Web MIDI Console
-#  link: /web-midi-console
+- name: Home
+  link: /
+- name: Web MIDI Console
+  link: /web-midi-console/
+- name: Archive
+  link: /archive

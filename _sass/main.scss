@@ -1,29 +1,54 @@
+
 body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-  font-family: Optima,Candara;
-}
-.nav {
-  background-color: #fff;
-  padding: 8px;
-}
-.nav img {
-  float: left;
+  font-family: Optima;
 }
 
-nav {
-  padding-top: 14px;
-  margin-right: 10px;
+h1 {
+  margin: 0;
+  padding: 0;
 }
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+  font-family: Optima;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-left: 8px;
+  padding-bottom: 20px;
+}
+
 nav a {
-  margin-right: 8px
+  margin-right: 8px;
 }
 .current {
   font-weight: bold;
 }
 
 .content {
+  font-family: Optima;
   padding-left: 8px;
-  width:80%
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 12px;
+  padding-top: 10px;
+  position: absolute;
+
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
 }
