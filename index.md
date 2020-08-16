@@ -16,7 +16,7 @@ You can find me in various places on the Internet. For example, [Twitter](https:
 
 I wrote a [console app](/web-midi-console) for viewing MIDI data in a web browser. It's helpful for testing and debugging MIDI gear.
 
-I developed [patch editors](https://editor.meeblip.com) for MeeBlip synthesizers and got to do an [interview](https://cdm.link/2017/03/web-browser-now-makes-meeblip-synth-powerful-free/) with Create Digital Music.
+I developed [patch editors](https://editor.meeblip.com) for MeeBlip synthesizers and did an [interview](https://cdm.link/2017/03/web-browser-now-makes-meeblip-synth-powerful-free/) with Create Digital Music.
 
 I've been referenced on popular music technology sites like [CDM](https://cdm.link/?s=schmaus) and [Synthtopia](http://www.synthtopia.com/?s=schmaus).
 
