@@ -10,14 +10,16 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: #fff;
-  color: #333;
+  color: #000;
 }
 
 h1 {
+  font-family: Optima;
   margin: 0;
   padding: 0;
 }
 h2 {
+  font-family: Optima;
   margin: 0;
   padding: 0;
 }
@@ -45,9 +47,14 @@ nav a {
 }
 
 .content {
-  font-family: Optima;
+  font-family: Didot;
   padding-left: 8px;
   margin-bottom: 20px;
+  width: 80%;
+}
+
+.content p {
+  font-size: 1em;
 }
 
 footer {

@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: Web MIDI Console
-  link: /web-midi-console/
+- name: Music
+  link: /music
 - name: Archive
   link: /archive
