@@ -12,7 +12,7 @@ permalink: /music
 
 # Song Ideas
 
-<p>Here's are some rough cuts and sketches of songs I've created.</p>
+<p>Here are some rough cuts and song sketches.</p>
 
 <div>
 <div><iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218161383&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false" width="100%" height="166" frameborder="no" scrolling="no"></iframe></div>
