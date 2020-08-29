@@ -6,9 +6,6 @@ title: Home
 
 My name is Ben Schmaus.
 
-I am a software developer and musician.
+I am a [software developer](http://www.linkedin.com/in/bschmaus) and [musician](https://www.instagram.com/schmaus6/).
 
-You can find me in various places on the Internet. For example, [Twitter](https://twitter.com/schmaus) and [LinkedIn](http://www.linkedin.com/in/bschmaus).
-
-
-<img src="/assets/img/sea-horse.jpg" class="homeimg" />
+You can find me in various places on the Internet and, often, in the Greater Philadelphia area of Pennsylvania.
