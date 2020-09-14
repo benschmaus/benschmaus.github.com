@@ -4,7 +4,13 @@ title: Music
 permalink: /music
 ---
 
-# Projects
+# Guitar
+
+* I have a Bachelor's of Music in jazz guitar and music technology.  If you're interested in talking guitar or a lesson, email me at benjamin.schmaus@gmail.com!
+* [Instagram](https://www.instagram.com/schmaus6/) videos
+* I've studied with a number of teachers over the years including: [Tim Bedner](https://timbedner.com/), [Ken Karsh](http://kenkarshguitar.com/about/), [Joe Negri](https://en.wikipedia.org/wiki/Joe_Negri), [Mike Stern](https://en.wikipedia.org/wiki/Mike_Stern). 
+
+# Code 
 
 * [console app](/web-midi-console) for viewing MIDI data in a web browser. It's helpful for testing and debugging MIDI gear.
 
