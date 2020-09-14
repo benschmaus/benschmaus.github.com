@@ -6,7 +6,7 @@ title: Home
 
 My name is Ben Schmaus.
 
-I am a [software developer](http://www.linkedin.com/in/bschmaus) and [musician](https://www.instagram.com/schmaus6/).
+I am a [software developer](http://www.linkedin.com/in/bschmaus) and [musician](/music).
 
 I enjoy chess (and am usually up for an unrated daily game on [chess.com](https://www.chess.com/member/bschmaus) if you'd like to play).
 
