@@ -13,7 +13,6 @@ permalink: /music
 # Code 
 
 * [console app](/web-midi-console) for viewing MIDI data in a web browser. It's helpful for testing and debugging MIDI gear.
-
 * [patch editors](https://editor.meeblip.com) for MeeBlip synthesizers and an [interview](https://cdm.link/2017/03/web-browser-now-makes-meeblip-synth-powerful-free/) with Create Digital Music.
 
 # Song Ideas
