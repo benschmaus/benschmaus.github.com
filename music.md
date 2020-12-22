@@ -8,7 +8,7 @@ permalink: /music
 
 * [Instagram](https://www.instagram.com/schmaus6/) videos of me playing
 * I have a Bachelor's of Music in jazz guitar and music technology, and I've studied with a number of teachers over the years including: [Tim Bedner](https://timbedner.com/), [Ken Karsh](http://kenkarshguitar.com/about/), [Joe Negri](https://en.wikipedia.org/wiki/Joe_Negri), and [Mike Stern](https://en.wikipedia.org/wiki/Mike_Stern). 
-* If you're interested in talking guitar or a lesson, DM me on [Instagram](https://www.instagram.com/schmaus6) or email me at benjamin.schmaus@gmail.com!
+* If you're interested in talking guitar or a lesson, DM me on [Instagram](https://www.instagram.com/schmaus6) or email me at benjamin.schmaus@gmail.com.
 
 # Code 
 
