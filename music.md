@@ -7,10 +7,10 @@ permalink: /music
 # Guitar
 
 * [Instagram](https://www.instagram.com/schmaus6/) videos of me playing
-* I have a Bachelor's of Music in jazz guitar and music technology, and I've studied with a number of teachers over the years including: [Tim Bedner](https://timbedner.com/), [Ken Karsh](http://kenkarshguitar.com/about/), [Joe Negri](https://en.wikipedia.org/wiki/Joe_Negri), and [Mike Stern](https://en.wikipedia.org/wiki/Mike_Stern). 
+* I have a Bachelor's of Music in jazz guitar and music technology, and I've taken lessons and studied with a number of teachers over the years including: [Tim Bedner](https://timbedner.com/), [Ken Karsh](http://kenkarshguitar.com/about/), [Joe Negri](https://en.wikipedia.org/wiki/Joe_Negri), and [Mike Stern](https://en.wikipedia.org/wiki/Mike_Stern), [Tom Monda](https://www.premierguitar.com/authors/837-tom-monda), [Ben Eunson](https://www.beneunson.com/).
 * If you're interested in talking guitar or a lesson, DM me on [Instagram](https://www.instagram.com/schmaus6) or email me at benjamin.schmaus@gmail.com.
 
-# Code 
+# Tech
 
 * [console app](/web-midi-console) for viewing MIDI data in a web browser. It's helpful for testing and debugging MIDI gear.
 * [patch editors](https://editor.meeblip.com) for MeeBlip synthesizers and an [interview](https://cdm.link/2017/03/web-browser-now-makes-meeblip-synth-powerful-free/) with Create Digital Music.
